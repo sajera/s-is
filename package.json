@@ -1,0 +1,25 @@
+{
+  "name": "s-is",
+  "version": "1.0.3",
+  "description": "Generate id from base string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "devtool test"
+  },
+  "homepage": "https://github.com/sajera/s-is#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajera/s-is.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sajera/s-is/issues"
+  },
+  "keywords": [
+    "s-is",
+    "is"
+  ],
+  "author": "Sajera: Serhii P <allsajera@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}

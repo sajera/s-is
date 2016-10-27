@@ -10,6 +10,7 @@ if ( x*1 === x ) { ... } // if that number
 ```
 ---------------
 [![NPM version][npm-image]][npm-url]
+[![License][license-image]][license-url]
 # s-is
 
 **Let me introduce a simple way to ensure the correctness of the target data. As I see it.**

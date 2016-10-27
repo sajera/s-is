@@ -116,3 +116,5 @@ function test () {
 
 [npm-image]: https://badge.fury.io/js/s-is.svg
 [npm-url]: https://npmjs.org/package/s-is
+[license-image]: http://img.shields.io/npm/l/is-arguments.svg
+[license-url]: LICENSE

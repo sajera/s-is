@@ -72,6 +72,7 @@ is.typeof( '5' );              // => "string"
 is.typeof( true );             // => "boolean"
 is.typeof( undefined );        // => "undefined"
 is.typeof( function () {} );   // => "function"
+
 // just more example
 is.typeof( Symbol() );         // => "symbol"
 is.typeof( process );          // => "object"
@@ -86,10 +87,12 @@ And in the end, we frequently need to define some specific objects. This applies
 
 ```javascript
 var is = require('s-is');
+
 // date
 is.date( new Date() );    // => true
 is('date', new Date() );  // => true
 is('date', (new Date()).getDate() );  // => false
+
 // promise
 var p = new Promise(new Function, new Function);
 is.promise( p );                       // => true
@@ -103,10 +106,8 @@ is._object( new class test {} );       // => true
 is('_object',  window );               // => false
 is('_object', process );               // => false
 is('_object', new Promise(new Function, new Function) );// => false
+
 // arguments
-function test () {
-    console.log('is.argument =>', is.argument(arguments)); // => true
-};
 (function ( x ) {
     console.log(
         '\n is.argument', is.argument(arguments),

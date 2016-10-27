@@ -107,6 +107,20 @@ is('_object', new Promise(new Function, new Function) );// => false
 function test () {
     console.log('is.argument =>', is.argument(arguments)); // => true
 };
+(function ( x ) {
+    console.log(
+        '\n is.argument', is.argument(arguments),
+        '\n is.empty', is.empty(arguments),
+        '\n arguments', arguments
+    );
+})(1);
+(function ( x ) {
+    console.log(
+        '\n is.argument', is.argument(arguments),
+        '\n is.empty', is.empty(arguments),
+        '\n arguments', arguments
+    );
+})();
 ```
 
 **available list :**

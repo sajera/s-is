@@ -1,10 +1,11 @@
 {
   "name": "s-is",
-  "version": "1.0.3",
-  "description": "Generate id from base string",
+  "version": "1.0.0",
+  "description": "A simple way to ensure the correctness of the target data.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
     "debug": "devtool test"
   },
   "homepage": "https://github.com/sajera/s-is#readme",

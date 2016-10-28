@@ -113,7 +113,7 @@
     };
 
     /*-------------------------------------------------
-        build a user frendly =) execiter for cheks
+        build a user frendly =) executer for cheks
     ---------------------------------------------------*/
     var is = dualize(Object.assign({
         // to make an branch "platform" (addition ability of "is")

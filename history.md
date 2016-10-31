@@ -17,6 +17,8 @@
 
 #### version 1.0.0:
 
+"s-is" added to npm with support of  initiation for node and browser
+
 **Data types:**
 > NaN, null, undefined, infinity, number, string, boolean, function, array, object
 
@@ -28,5 +30,8 @@
 **Helpers:**
 > date, regexp, error, argument, promise, symbol
 
-**is Platform:**
+**is platform:**
 > node, browser
+
+**is supported:**
+> symbol, promise

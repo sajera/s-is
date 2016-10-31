@@ -6,7 +6,7 @@
     	"package.json",
     	"bower.json",
     	"readme.md",
-    	"test.js",
+    	"test.js"
     ],
     "dependencies": {},
     "devDependencies": {}

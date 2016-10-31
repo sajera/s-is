@@ -124,7 +124,7 @@ is('_object', new Promise(new Function, new Function) );// => false
 })();
 ```
 
-**available list :** https://github.com/sajera/s-is#history.md
+**available list :** https://github.com/sajera/s-is/blob/master/history.md
 
 
 

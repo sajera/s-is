@@ -124,10 +124,7 @@ is('_object', new Promise(new Function, new Function) );// => false
 })();
 ```
 
-**available list :**
-
-**for version 1.1.0 :**
-	promise, symbol, error, date, regexp, _object, _number, argument, empty, defined, finite
+**available list :** https://github.com/sajera/s-is#history.md
 
 
 

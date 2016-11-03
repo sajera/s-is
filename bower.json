@@ -3,9 +3,12 @@
     "version": "1.1.0",
     "main": "index.js",
     "ignore": [
+        "node_modules",
+        "bower_components",
     	"package.json",
-    	"bower.json",
     	"readme.md",
+        "test",
+        "tests",
     	"test.js"
     ],
     "dependencies": {},

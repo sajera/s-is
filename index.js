@@ -47,7 +47,7 @@
         'undefined': function ( data ) { return typeof data == 'undefined'; },
         'array': function ( data ) { return ts.call(data) == '[object Array]'; },
         // for typeof which can detect 10 types of data the object is not a null or Array
-        'object': function ( data ) { return typeof data == 'object'; },
+        'object': function ( data ) { return !!data && !is.array( data ) && typeof data == 'object'; },
         'defined': function ( data ) { return typeof data !== 'undefined'; },
     };
 
@@ -86,13 +86,15 @@
         },
         // alias for strict detect number
         'finite': function ( data ) { return is._number(data); },
+        // this value can be involved mathematical operations
+        'countable': function ( data ) { return !is.symbol(data) && !is.infinity(data) && data*1 == data; },
         // addition js data detection
         'date': function ( data ) { return ts.call(data) == '[object Date]'; },
         'error': function ( data ) { return ts.call(data) == '[object Error]'; },
         'symbol': function ( data ) { return ts.call(data) == '[object Symbol]'; },
         'regexp': function ( data ) { return ts.call(data) == '[object RegExp]'; },
         'argument': function ( data ) { return ts.call(data) == '[object Arguments]'; },
-        'promise': function ( data ) { return ts.call(data) == '[object Promise]'||(data && is.function(data['then'])); },
+        'promise': function ( data ) { return ts.call(data) == '[object Promise]'||(!!data && is.function(data['then'])); },
 
     };
     

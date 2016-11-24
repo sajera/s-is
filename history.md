@@ -2,7 +2,13 @@
 
 
 
+#### version 1.1.0:
 
+
+**Helpers:**
+> countable
+
+--------------
 
 
 #### version 1.1.0:
@@ -25,7 +31,7 @@
 > typeof
 
 **Strict mode:**
-> _object, define
+> _object, defined
 
 **Helpers:**
 > date, regexp, error, argument, promise, symbol

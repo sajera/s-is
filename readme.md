@@ -50,7 +50,7 @@ It gives us a lot of benefits and expands our capabilities. And also adds surpri
 // try it
 typeof Symbol() == 'symbol'; // => true
 // but
-typeof ( new Promise(new Function, new Function) ) == 'object'; // => true
+typeof ( new Promise(new Function) ) == 'object'; // => true
 // or
 typeof (class test {}) == 'function'; // => true
 ```
@@ -94,7 +94,7 @@ is('date', new Date() );  // => true
 is('date', (new Date()).getDate() );  // => false
 
 // promise
-var p = new Promise(new Function, new Function);
+var p = new Promise(new Function);
 is.promise( p );                       // => true
 is('promise', p );                     // => true
 is.promise( {} );                      // => false
@@ -105,7 +105,7 @@ is._object( new function Test () {} ); // => true
 is._object( new class test {} );       // => true
 is('_object',  window );               // => false
 is('_object', process );               // => false
-is('_object', new Promise(new Function, new Function) );// => false
+is('_object', new Promise(new Function) );// => false
 
 // arguments
 (function ( x ) {

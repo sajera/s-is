@@ -1,96 +1,103 @@
 
 console.log('test');
-// var is = require('./index.js');
-var is = require('./is.min.js');
+var is = require('./index.js');
+// var is = require('./is.min.js');
 
 (function () { console.log('is.argument', is.argument(arguments), 'is.empty', is.empty(arguments), '\n', arguments) })(1);
 (function () { console.log('is.argument', is.argument(arguments), 'is.empty', is.empty(arguments), '\n', arguments) })();
 
-console.log(
-	'1) is.nan -',
-		'\n\tNaN:', is.nan(NaN),
-		'\n\t"NaN":', is.nan("NaN"),
-		'\n\t5*0:', is.nan(5*0),
 
-	'\n\n2) is.null -',
-		'\n\tnull:', is.null(null),
-		'\n\t"null":', is.null("null"),
-		'\n\tundefined:', is.null(undefined),
-		'\n\t{}:', is.null({}),
+var testData = {
+    'Number -1'          : -1,
+    'Number 0'           : 0,
+    'Number 1'           : 1,
+    'Number 0.1'         : 0.1,
+    'String  ""'         : '',
+    'String -1'          : '-1',
+    'String 0'           : '0',
+    'String 1'           : '1',
+    'String 0.1'         : '0.1',
+    'String 1*5'         : '1*5',
+    'String str'         : 'str',
+    'String null'        : 'null',
+    'String NaN'         : 'NaN',
+    'String undefined'   : 'undefined',
+    'String true'        : 'true',
+    'undefined'          : undefined,
+    'Infinity'           : Infinity,
+    '-Infinity'          : -Infinity,
+    'NaN'                : NaN,
+    'null'               : null,
+    'true'               : true,
+    'false'              : false,
+    '[]'                 : [],
+    '[1,2]'              : [1,2],
+    '{}'                 : {},
+    '{x:1}'              : {x:1},
+    'new Function()'     : new Function,
+    'new Date()'         : new Date,
+    'new RegExp()'       : new RegExp,
+    'new Promise()'      : new Promise(new Function),
+    'Symbol()'           : Symbol(),
+    '9999999*9999999*9999999': 9999999*9999999*9999999
+};
+var max = 26;
+// only for console
+var browser = is.platform.browser();
+function red ( text ) {
+    if (browser) return text;
+    return '\x1B[0m\x1B[41m'+text+'\x1B[49m\x1B[0m';
+}
+function green ( text ) {
+    if (browser) return text;
+    return '\x1B[0m\x1B[42m'+text+'\x1B[49m\x1B[0m';
+}
+function yellow ( text ) {
+    if (browser) return text;
+    return '\x1B[0m\x1B[43m'+text+'\x1B[49m\x1B[0m';
+}
+function delimiter ( length ) {
+    var list = [];
+    list[length] = '';
+    return list.join('-');
+};
+function td ( str ) {
+    str = str.length % 2 == 0 ? str : str+' ';
+    var list = [];
+    list[(max - str.length)/2] = '';
+    return list.join(' ')+str+list.join(' ');
+};
+function table ( methods ) {
+    var table = yellow(td('DATA'))+'|';
+    for ( var method of methods ) {
+        table += yellow(td(method))+'|';
+    }
+    var line = delimiter(((methods.length+1)*max)+methods.length+1);
+    // make first headers row
+    table += '\n'+line;
+    for (var field in testData ) {
+        // each row of table
+        table+=('\n'+td(field)+'|');
+        for ( var method of methods ) {
+            try { var res = is(method, testData[field]);
+            } catch ( e ) { var res = 'ERROR'; };
+            table += res ? green(td(res.toString()))+'|' : red(td(res.toString()))+'|';
+        }
+        table+='\n'+line;
+    }
+    return line+'\n'+table;
+};
 
-	'\n\n3) is.infinity -',
-		'\n\tInfinity:', is.infinity(Infinity),
-		'\n\t-Infinity:', is.infinity(-Infinity),
-		'\n\t"Infinity":', is.infinity("Infinity"),
-		'\n\t9999999*9999999*9999999:', is.infinity(9999999*9999999*9999999),
-
-	'\n\n4) is.number -',
-		'\n\t0:', is.number(0),
-		'\n\ttrue:', is.number(true),
-		'\n\t"1":', is.number("1"),
-		'\n\t"":', is.number(""),
-		'\n\tNaN:', is.number(NaN),
-		'\n\tInfinity:', is.number(Infinity),
-		'\n\t9999999*9999999*9999999:', is.number(9999999*9999999*9999999),
-
-	'\n\n5) is._number -',
-		'\n\t0:', is._number(0),
-		'\n\ttrue:', is._number(true),
-		'\n\t"1":', is._number("1"),
-		'\n\t"":', is._number(""),
-		'\n\tNaN:', is._number(NaN),
-		'\n\tInfinity:', is._number(Infinity),
-		'\n\t9999999*9999999*9999999:', is._number(9999999*9999999*9999999),
-
-	'\n\n6) is.string -',
-		'\n\t"1":', is.string("1"),
-		'\n\t[1]:', is.string([1]),
-		'\n\t"[1]":', is.string("[1]"),
-		'\n\t1:', is.string(1),
-
-	'\n\n7) is.boolean -',
-		'\n\ttrue:', is.boolean(true),
-		'\n\tfalse:', is.boolean(false),
-		'\n\t"true":', is.boolean("true"),
-		'\n\t0:', is.boolean(0),
-		'\n\t"":', is.boolean(""),
-		'\n\tundefined:', is.boolean(undefined),
-
-	'\n\n8) is.function -',
-		'\n\tnew Function:', is.function(new Function),
-		'\n\tfunction(){}:', is.function(function(){}),
-		'\n\t"function(){}":', is.function("function(){}"),
-		'\n\tis:', is.function(is),
-
-	'\n\n9) is.array -',
-		'\n\t[]:', is.array([]),
-		'\n\t{}:', is.array({}),
-		'\n\t"[]":', is.array("[]"),
-
-	'\n\n10) is.undefined -',
-		'\n\tundefined:', is.undefined(undefined),
-		'\n\tnull:', is.undefined(null),
-		'\n\tfalse:', is.undefined(false),
-		'\n\t"":', is.undefined(""),
-
-	'\n\n11) is.object -',
-		'\n\t[]:', is.object([]),
-		'\n\t{}:', is.object({}),
-		'\n\tnull:', is.object(null),
-		'\n\tfunction(){}:', is.object(function(){}),
-		'\n\tnew function(){}:', is.object(new function(){}),
-		'\n\t'+(is('platform', 'node') ? 'process' : 'window')+':', is.object( (is('platform', 'node') ? process : window) ),
-
-	'\n\n12) is._object -',
-		'\n\t[]:', is._object([]),
-		'\n\t{}:', is._object({}),
-		'\n\tnull:', is._object(null),
-		'\n\tfunction(){}:', is._object(function(){}),
-		'\n\tnew function(){}:', is._object(new function(){}),
-		'\n\t'+(is('platform', 'node') ? 'process' : 'window')+':', is._object( (is('platform', 'node') ? process : window) )
-
-	
-);
+console.log( red('GENERAL 1-5') );
+console.log(table(['string', 'array', 'object', 'function', 'boolean']), '\n\n');
+console.log(red('GENERAL 6-10'));
+console.log(table(['number', 'infinity', 'undefined', 'null', 'NaN']), '\n\n');
+console.log(red('STRICT'));
+console.log(table(['_object', '_number', 'defined']), '\n\n');
+console.log(red('HELPERS 1-5'));
+console.log(table(['date', 'regexp', 'error', 'argument', 'promise']), '\n\n');
+console.log(red('HELPERS 6-9'));
+console.log(table(['symbol', 'finite', 'empty', 'countable']), '\n\n');
 
 
 is.platform.browser()&&(window.is = is);

@@ -1,11 +1,16 @@
 
+'use strict';
+
 console.log('test');
-var is = require('./index.js');
-// var is = require('./is.min.js');
+// var is = require('./index.js');
+var is = require('./is.min.js');
 
-(function () { console.log('is.argument', is.argument(arguments), 'is.empty', is.empty(arguments), '\n', arguments) })(1);
-(function () { console.log('is.argument', is.argument(arguments), 'is.empty', is.empty(arguments), '\n', arguments) })();
-
+var max = 26;
+var low = 10;
+// coloring table only for console
+var browser = is.platform.browser();
+var testArgs = null;
+(function () { testArgs = arguments; })(1);
 
 var testData = {
     'Number -1'          : -1,
@@ -38,12 +43,12 @@ var testData = {
     'new Date()'         : new Date,
     'new RegExp()'       : new RegExp,
     'new Promise()'      : new Promise(new Function),
+    'new Error()'        : new Error(),
     'Symbol()'           : Symbol(),
+    'Object arguments>[1]': testArgs,
     '9999999*9999999*9999999': 9999999*9999999*9999999
 };
-var max = 26;
-// only for console
-var browser = is.platform.browser();
+
 function red ( text ) {
     if (browser) return text;
     return '\x1B[0m\x1B[41m'+text+'\x1B[49m\x1B[0m';
@@ -61,43 +66,38 @@ function delimiter ( length ) {
     list[length] = '';
     return list.join('-');
 };
-function td ( str ) {
+function td ( str, len ) {
     str = str.length % 2 == 0 ? str : str+' ';
     var list = [];
-    list[(max - str.length)/2] = '';
+    list[(len - str.length)/2] = '';
     return list.join(' ')+str+list.join(' ');
 };
-function table ( methods ) {
-    var table = yellow(td('DATA'))+'|';
-    for ( var method of methods ) {
-        table += yellow(td(method))+'|';
-    }
-    var line = delimiter(((methods.length+1)*max)+methods.length+1);
+function table ( name, methods ) {
+    var line = delimiter(max+1+(methods.length*(low+1)));
     // make first headers row
-    table += '\n'+line;
+    var table = yellow(td(name, max))+'|';
+    for ( var method of methods ) table += td(method, low)+'|';
+    // data result rows    
     for (var field in testData ) {
-        // each row of table
-        table+=('\n'+td(field)+'|');
+        table+='\n'+line;
+        table+=('\n'+td(field, max)+'|');
         for ( var method of methods ) {
             try { var res = is(method, testData[field]);
             } catch ( e ) { var res = 'ERROR'; };
-            table += res ? green(td(res.toString()))+'|' : red(td(res.toString()))+'|';
+            table += res ? green(td(res.toString(), low))+'|' : red(td(res.toString(), low))+'|';
         }
-        table+='\n'+line;
     }
-    return line+'\n'+table;
+    return line+'\n'+table+'\n'+line;
 };
+// write tables
+console.log(table('GENERAL',
+    ['string', 'array', 'object', 'function', 'boolean','number', 'infinity', 'undefined', 'null', 'NaN']
+), '\n');
 
-console.log( red('GENERAL 1-5') );
-console.log(table(['string', 'array', 'object', 'function', 'boolean']), '\n\n');
-console.log(red('GENERAL 6-10'));
-console.log(table(['number', 'infinity', 'undefined', 'null', 'NaN']), '\n\n');
-console.log(red('STRICT'));
-console.log(table(['_object', '_number', 'defined']), '\n\n');
-console.log(red('HELPERS 1-5'));
-console.log(table(['date', 'regexp', 'error', 'argument', 'promise']), '\n\n');
-console.log(red('HELPERS 6-9'));
-console.log(table(['symbol', 'finite', 'empty', 'countable']), '\n\n');
+console.log(table('STRICT',
+    ['_object', '_number', 'defined']
+),'\n');
 
-
-is.platform.browser()&&(window.is = is);
+console.log(table('HELPERS',
+    ['date', 'regexp', 'error', 'argument', 'promise', 'symbol', 'finite', 'empty', 'countable']
+), '\n');

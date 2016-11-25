@@ -24,7 +24,7 @@
          * is.typeof return name of the data type
          * it can return all 10 data types plus new data types of ES6 and more
          *
-         * @param: { Any }
+         * @param data: { Any }
          * @returns: { String }
          */
         'typeof': function ( data ) {
@@ -70,7 +70,8 @@
          * is.empty check the data that may contain child elements
          * without fix to => https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug
          *
-         * @param: { Object|Array|Arguments|String }
+         * @param data: { Object|Array|Arguments|String }
+         * @param notSafe: { Boolean } - if true throw error on wrong data type
          * @returns: { Boolean }
          */
         'empty': function ( data, notSafe ) {
@@ -111,7 +112,7 @@
     ---------------------------------------------------*/
     var support = {
         'symbol': function () { return typeof Symbol == 'function' && is.symbol(Symbol()); },
-        'promise': function () { return typeof Promise == 'function' && is.promise(new Promise(new Function, new Function)); },
+        'promise': function () { return typeof Promise == 'function' && is.promise(new Promise(new Function)); },
     };
 
     /*-------------------------------------------------
@@ -131,7 +132,7 @@
      * @public
      */
     if ( is.platform.node() ) module.exports = is;
-    else glob['is'] = is;
+    if ( is.platform.browser() ) window['is'] = is;
 
 })( function is ( check ) {
     if (

@@ -1,12 +1,12 @@
 
 
 
-#### version 1.2.0:
+## version 1.2.0:
 
 **Table of results**
 
 
-#### version 1.1.1:
+## version 1.1.1:
 
 **Helpers:**
 > countable
@@ -15,7 +15,7 @@
 --------------
 
 
-#### version 1.1.0:
+## version 1.1.0:
 
 **Strict mode:**
 > _number
@@ -25,7 +25,7 @@
 
 --------------
 
-#### version 1.0.0:
+## version 1.0.0:
 
 "s-is" added to npm with support of  initiation for node and browser
 

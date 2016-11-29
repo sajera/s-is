@@ -7,7 +7,7 @@ var is = require('./is.min.js');
 
 var max = 26;
 var low = 10;
-// coloring table only for console
+// coloring table only for terminal
 var browser = is.platform.browser();
 var testArgs = null;
 (function () { testArgs = arguments; })(1);

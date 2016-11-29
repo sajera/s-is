@@ -3,17 +3,20 @@
 
 ## version 1.2.0:
 
-**Table of results**
+```coming soon```
 
+--------------
 
 ## version 1.1.1:
+
+**added to Bower**
+
+**added table of results**
 
 **Helpers:**
 > countable
 
-
 --------------
-
 
 ## version 1.1.0:
 
@@ -44,3 +47,6 @@
 > node, browser
 
 **is supported:**
+
+
+--------------

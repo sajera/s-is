@@ -9,7 +9,7 @@
         "bower_components",
         "package.json",
         "bower.json",
-        "readme.md",
+        "history.md",
         "test",
         "tests",
         "test.*"

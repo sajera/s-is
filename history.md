@@ -1,25 +1,16 @@
 
 
 
+#### version 1.2.0:
 
-
-[//]: <> (#### version 1.2.0:)
-
-[//]: <> (added to bower)
-
-
-
+**Table of results**
 
 
 #### version 1.1.1:
 
-**added table:**
-1. [Data types](https://github.com/sajera/s-is/blob/master/tables/data_types(GENERAL).png)
-2. [Helpers](https://github.com/sajera/s-is/blob/master/tables/addition_qualifier(HELPERS).png)
-3. [Strict mode](https://github.com/sajera/s-is/blob/master/tables/strict_mode_data(STRICT).png)
-
 **Helpers:**
 > countable
+
 
 --------------
 

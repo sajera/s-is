@@ -124,8 +124,13 @@ is('_object', new Promise(new Function) );// => false
 })();
 ```
 
-**available list :** https://github.com/sajera/s-is/blob/master/history.md
+**```available``` :** [**list**](https://github.com/sajera/s-is/blob/master/history.md)
 
+**Table of results** that generates a test script module.```termainal```
+
+![Data types](https://github.com/sajera/s-is/blob/master/tables/data_types(GENERAL).png?raw=true "Data types")
+![Helpers](https://github.com/sajera/s-is/blob/master/tables/addition_qualifier(HELPERS).png?raw=true "Helpers")
+![Strict mode](https://github.com/sajera/s-is/blob/master/tables/strict_mode_data(STRICT).png?raw=true "Strict mode")
 
 
 [npm-image]: https://badge.fury.io/js/s-is.svg

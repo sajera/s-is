@@ -1,6 +1,6 @@
 {
     "name": "s-is",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "main": "is.min.js",
     "private": false,
     "description": "A simple way to ensure the correctness of the target data.",
@@ -10,8 +10,8 @@
         "package.json",
         "bower.json",
         "history.md",
-        "test",
-        "tests",
+        "gulpfile.js",
+        "lib",
         "test.*"
     ],
     "keywords": [

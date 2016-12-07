@@ -16,15 +16,13 @@ if ( x*1 === x ) { ... } // if that number
 
 **Let me introduce a simple way to ensure the correctness of the target data. As I see it.**
 
-### installation for
-
-```Node.js```
+### installation for ```Node.js```
 
 ```shell
 npm i s-is --save
 ```
 
-```Browser```
+### installation for ```Browser```
 
 ```shell
 bower i s-is --save

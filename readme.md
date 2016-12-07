@@ -17,14 +17,18 @@ if ( x*1 === x ) { ... } // if that number
 **Let me introduce a simple way to ensure the correctness of the target data. As I see it.**
 
 ### installation for
+
 ```Node.js```
+
 ```shell
 npm i s-is --save
 ```
+
 ```Browser```
+
 ```shell
 bower i s-is --save
-``````
+```
 
 In javascript definition of data types associated with some difficulties. Due to the fact that the original methods do not always work as expected. We are forced to turn to non-standard decisions. Not always, these decisions are correct, and even rarer - code still readable.
 **If we are interested in conditional of 10 data types.And we want them correctly and to determine.**

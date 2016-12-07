@@ -3,7 +3,7 @@
 
 ## version 1.2.0:
 
-```coming soon```
+added ability to rebuild and extend source of library
 
 --------------
 

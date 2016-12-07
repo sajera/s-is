@@ -1,3 +1,7 @@
+/**
+ * s-is    
+ * MIT License Copyright (c) 2016 Serhii Perekhrest <allsajera@gmail.com> ( Sajera )    
+ */
 (function () {'use strict';
 
 var ts = Object.prototype.toString;
@@ -40,6 +44,7 @@ var types = {
      */
     'defined': function ( data ) { return typeof data != 'undefined'; },
 };
+
 /*-------------------------------------------------
     strict mode for checking data types
 ---------------------------------------------------*/
@@ -48,7 +53,10 @@ var strict = {
     '_object': function ( data ) { return ts.call(data) == '[object Object]'; },
     // only number not NaN or Infinity or NUMBER more than possible to consider
     '_number': function ( data ) { return is.number( data ) && !is.nan( data ) && data != data+1; },
-
+    /**
+     * which data types requires a strict detect ?
+     * @returns: { Boolean }
+     */
 };
 
 /*-------------------------------------------------
@@ -86,7 +94,10 @@ var helpers = {
     'argument': function ( data ) { return ts.call(data) == '[object Arguments]'; },
     // really it is worth to install the module for this check?
     'promise': function ( data ) { return ts.call(data) == '[object Promise]'||(!!data && is.function(data['then'])); },
-
+    /**
+     * which additional data types requires detect ?
+     * @returns: { Boolean }
+     */
 };
 
 /*-------------------------------------------------
@@ -94,39 +105,39 @@ var helpers = {
     sometimes we want to know whether this is supported technology for this platform
 ---------------------------------------------------*/
 var support = {
-	/**
-	 * 
-	 * @returns: { Boolean }
-	 */
+    /**
+     * 
+     * @returns: { Boolean }
+     */
     'symbol': function () { return typeof Symbol == 'function' && is.symbol(Symbol()); },
     /**
-	 * 
-	 * @returns: { Boolean }
-	 */
+     * 
+     * @returns: { Boolean }
+     */
     'promise': function () { return typeof Promise == 'function' && is.promise(new Promise(new Function)); },
     /**
-	 * which support we may need detect ?
-	 * @returns: { Boolean }
-	 */
+     * which support we may need detect ?
+     * @returns: { Boolean }
+     */
 };
 /*-------------------------------------------------
     detect a platforms (my plan make a more platform detection)
 ---------------------------------------------------*/
 var platform = {
-	/**
-	 * detect a node is very simple but it can be simple and FAST
-	 * @returns: { Boolean }
-	 */
+    /**
+     * detect a node is very simple but it can be simple and FAST
+     * @returns: { Boolean }
+     */
     'node': function () { return typeof process != 'undefined' && ts.call(process) == '[object process]'; },
     /**
-	 * detect a browser is very simple but it can be simple and FAST
-	 * @returns: { Boolean }
-	 */
+     * detect a browser is very simple but it can be simple and FAST
+     * @returns: { Boolean }
+     */
     'browser': function () { return typeof window != 'undefined' && ts.call(window) == '[object Window]'; },
     /**
-	 * which platform we may need detect ?
-	 * @returns: { Boolean }
-	 */
+     * which platform we may need detect ?
+     * @returns: { Boolean }
+     */
 };
 
 /*-------------------------------------------------
@@ -170,18 +181,18 @@ function is ( check ) {
     easier to understand if seen as a map of the methods
 ---------------------------------------------------*/
 var is = dualize(Object.assign(
-	{
-	    // to make an branch "platform" (addition ability of "is")
-	    'platform': dualize( platform ),
-	    // to make an branch "support" (addition ability of "is")
-	    'support': dualize( support )
-	},
-	// standard 10 types (has a typeof be 10+ data types )
-	types,
-	// helpers
-	helpers,
-	// strict mode detect of data
-	strict
+    {
+        // to make an branch "platform" (addition ability of "is")
+        'platform': dualize( platform ),
+        // to make an branch "support" (addition ability of "is")
+        'support': dualize( support )
+    },
+    // standard 10 types (has a typeof be 10+ data types )
+    types,
+    // helpers
+    helpers,
+    // strict mode detect of data
+    strict
 ));
 
 /**
@@ -191,4 +202,5 @@ var is = dualize(Object.assign(
  */
 if ( is.platform.node() ) module.exports = is;
 if ( is.platform.browser() ) window['is'] = is;
-})()
+
+})() 

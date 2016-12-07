@@ -1,8 +1,8 @@
 {
     "name": "s-is",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "description": "A simple way to ensure the correctness of the target data.",
-    "main": "is.js",
+    "main": "is.min.js",
     "scripts": {
         "start": "node is.min.js",
         "rebuild": "gulp concat&gulp minify",

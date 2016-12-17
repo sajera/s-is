@@ -73,7 +73,7 @@ var helpers = {
      */
     'empty': function ( data, notSafe ) {
         // if datatype acceptable to Object.keys
-        if ( (is.string(data)||typeof data == 'object'||is.function(data) ) && !is.null(data) ) {
+        if ( data&&(typeof data == 'object'||is.string(data)||is.function(data) ) ) {
             for ( var prop in data ) 
                 if ( Object.prototype.hasOwnProperty.call(data, prop) ) return false;
             return true;

@@ -3,6 +3,12 @@
 
 added tests and lint scripts
 
+**Strict mode:**
+> _equal
+
+**Helpers:**
+> equal
+
 ## version 1.2.0:
 
 added ability to rebuild and extend source of library

@@ -55,5 +55,4 @@ gulp.task('lint', function () {
 gulp.task('test', function ( done ) {
     return gulp.src('test/test.js', {read: false})
         .pipe( require('gulp-mocha')({reporter: 'nyan'}) );
-
 });

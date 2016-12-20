@@ -1,5 +1,7 @@
 
+## version 1.3.0:
 
+added tests and lint scripts
 
 ## version 1.2.0:
 

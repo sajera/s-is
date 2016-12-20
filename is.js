@@ -54,15 +54,95 @@ var strict = {
     // only number not NaN or Infinity or NUMBER more than possible to consider
     '_number': function ( data ) { return is.number( data ) && !is.nan( data ) && data != data+1; },
     /**
+     * strict comparison to equivalent between arguments
+     *
+     * @param first: { Any }
+     * @param second: { Any }
+     * @returns: { Boolean }
+     */
+    '_equal': function ( first, second ) {
+        switch ( is.typeof(first) ) {
+            case 'nan': return is.nan(second);
+            case 'infinity':
+            case 'undefined':
+            case 'boolean':
+            case 'symbol':
+            case 'null': return first == second;
+            case 'number': return is.number(second)&&first == second;
+            case 'string': return is.string(second)&&first == second;
+            case 'function': return is.function(second)&&first.toString() == second.toString();
+            case 'array':
+            case 'object':
+                var st = is.typeof(second);
+                if (st=='array'||st=='object') {
+                    return _objEqual( first, second );
+                } else return false;
+        }
+        // expect its case is error
+        return false;
+    }
+    /**
      * which data types requires a strict detect ?
      * @returns: { Boolean }
      */
 };
 
+function _objEqual ( first, second ) {
+    var k1 = Object.keys(first);
+    var k2 = Object.keys(second)
+    // fast compare
+    if ( k1.length != k2.length ) {
+        return false;
+    } else {
+        try { // compare object and array in strings 
+            if( JSON.stringify(first) != JSON.stringify(second) ) return false;
+        } catch (e) { return false; } // circular structure can not be compared
+        // check functions if it used like a objects
+        for ( var key = 0; key < k1.length; key ++ ) {
+            if ( k2.indexOf(k1[key]) == -1 || !strict._equal(first[k1[key]], second[k1[key]]) ) return false;
+        }
+    }
+    // i can not find any differents
+    return true;
+}
+
 /*-------------------------------------------------
     some helpers to detect some things
 ---------------------------------------------------*/
 var helpers = {
+    /**
+     * compare to equalent betwin argumetns
+     *
+     * @param first: { Any }
+     * @param second: { Any }
+     * @returns: { Boolean }
+     */
+    equal: function ( first, second ) {
+        switch ( is.typeof(first) ) {
+            case 'nan': return is.nan(second);
+            case 'infinity':
+            case 'undefined':
+            case 'boolean':
+            case 'null': return first == second;
+            case 'function': return is.function(second);
+            case 'symbol':
+            case 'number':
+            case 'string':
+                var st = is.typeof(second);
+                if (st!='null'&&st!='undefined') {
+                    return first.toString() == second.toString();
+                } else return false;
+            case 'array':
+            case 'object':
+                var st = is.typeof(second);
+                if (st=='array'||st=='object') {
+                    try { return JSON.stringify(first) == JSON.stringify(second);
+                    } catch ( e ) { return false; } // circular structure can not be equaled
+                } else return false;
+        }
+        // expect its case is error
+        return false;
+    },
     /**
      * is.empty check the data that may contain child elements
      * without fix to => https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug
@@ -82,6 +162,7 @@ var helpers = {
         // or maybe it's must be "true" ?
         else return true;
     },
+
     // alias for strict detect number
     'finite': function ( data ) { return is._number(data); },
     // this value can be involved mathematical operations
@@ -99,7 +180,6 @@ var helpers = {
      * @returns: { Boolean }
      */
 };
-
 /*-------------------------------------------------
     detect a supported of platforms
     sometimes we want to know whether this is supported technology for this platform

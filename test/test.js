@@ -16,7 +16,7 @@ var assert = require('chai').assert;
 //     console.log('"is", test afterEach');
 // });
 
-describe('is', function() {
+describe('test for', function() {
 
     it('"is" properties should be a function', function() {
         for ( var method in is ) {

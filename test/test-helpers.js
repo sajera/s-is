@@ -21,8 +21,8 @@ var promise3 = (require('q')).defer().promise;
  * @param data: { Any }
  * @returns: { Boolean }
  */
-function dual ( method, data ) {
-    return is[method](data)&&is(method, data);
+function dual ( method, data, data2 ) {
+    return is[method](data, data2)&&is(method, data, data2);
 }
 
 describe('HELPERS', function () {
@@ -121,6 +121,17 @@ describe('HELPERS', function () {
         expect( dual('date', Date)                  ).to.equal(false);
         expect( dual('date', {})                    ).to.equal(false);
         expect( dual('date', 1482241471417)         ).to.equal(false);
+    });
+
+    it('is.equal', function () {
+        expect( dual('equal', [1,{}],[1,{x:function(){}}]) ).to.equal(true);
+        expect( dual('equal', {x:1},{x:1})          ).to.equal(true);
+        expect( dual('equal', void(0), undefined)   ).to.equal(true);
+        expect( dual('equal', '', '')               ).to.equal(true);
+        expect( dual('equal', '1', 1)               ).to.equal(true);
+        expect( dual('equal', '', '1')              ).to.equal(false);
+        expect( dual('equal', null, 'null')         ).to.equal(false);
+        expect( dual('equal', [1,{x:2}],[1,{x:1}])  ).to.equal(false);
     });
 
 });

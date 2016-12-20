@@ -16,8 +16,8 @@ var args; // get object arguments
  * @param data: { Any }
  * @returns: { Boolean }
  */
-function dual ( method, data ) {
-    return is[method](data)&&is(method, data);
+function dual ( method, data, data2 ) {
+    return is[method](data, data2)&&is(method, data, data2);
 }
 
 describe('GENERAL', function () {

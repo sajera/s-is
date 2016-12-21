@@ -131,7 +131,7 @@ is('_object', new Promise(new Function) );// => false
 })();
 ```
 
-[```API **documentation** ```](https://github.com/sajera/s-is/blob/master/doc/API.md)
+#### [```API documentation ```](https://github.com/sajera/s-is/blob/master/doc/API.md)
 
 
 **Table of results** that generates a test script module.```termainal```

@@ -2,7 +2,7 @@
 'use strict';
 
 // var is = require('./is.js');
-var is = require('../is.min.js');
+var is = require('../s-is.min.js');
 
 var max = 26;
 var low = 10;

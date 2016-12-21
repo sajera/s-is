@@ -1,8 +1,7 @@
 /*
 * Unit tests for is.js
 */
-// var is = require('../is.js');
-var is = require('../is.min.js');
+var is = require('./test.js');
 
 // require('chai').should();
 var expect = require('chai').expect;
@@ -124,8 +123,8 @@ describe('HELPERS', function () {
     });
 
     it('is.equal', function () {
-        expect( dual('equal', [1,{}],[1,{x:function(){}}]) ).to.equal(true);
-        expect( dual('equal', {x:1},{x:1})          ).to.equal(true);
+        expect( dual('equal', [1,{x:Function}],[1,{x:function(){}}]) ).to.equal(true);
+        expect( dual('equal', {x:'1'},{x:1})        ).to.equal(true);
         expect( dual('equal', void(0), undefined)   ).to.equal(true);
         expect( dual('equal', '', '')               ).to.equal(true);
         expect( dual('equal', '1', 1)               ).to.equal(true);

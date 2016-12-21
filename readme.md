@@ -131,8 +131,7 @@ is('_object', new Promise(new Function) );// => false
 })();
 ```
 
-**```available``` :** [**list**](https://github.com/sajera/s-is/blob/master/history.md)
-
+```**documentation**``` [**API**](https://github.com/sajera/s-is/blob/master/doc/API.md)
 **Table of results** that generates a test script module.```termainal```
 
 ![Data types](https://github.com/sajera/s-is/blob/master/tables/data_types(GENERAL).png?raw=true "Data types")

@@ -1,0 +1,2663 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>S-IS 1.3.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='max-width-4 mx-auto'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>S-IS</h3>
+          <div class='mb1'><code>1.3.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#is'
+                  class="">
+                  is
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#istypeof'
+                  class="">
+                  is.typeof
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isnan'
+                  class="">
+                  is.nan
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isinfinity'
+                  class="">
+                  is.infinity
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isnull'
+                  class="">
+                  is.null
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isnumber'
+                  class="">
+                  is.number
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isstring'
+                  class="">
+                  is.string
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isboolean'
+                  class="">
+                  is.boolean
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isfunction'
+                  class="">
+                  is.function
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isarray'
+                  class="">
+                  is.array
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isobject'
+                  class="">
+                  is.object
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isundefined'
+                  class="">
+                  is.undefined
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isdefined'
+                  class="">
+                  is.defined
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#is_object'
+                  class="">
+                  is._object
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#is_number'
+                  class="">
+                  is._number
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#is_equal'
+                  class="">
+                  is._equal
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isequal'
+                  class="">
+                  is.equal
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isempty'
+                  class="">
+                  is.empty
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isfinite'
+                  class="">
+                  is.finite
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#iscountable'
+                  class="">
+                  is.countable
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isdate'
+                  class="">
+                  is.date
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#iserror'
+                  class="">
+                  is.error
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isregexp'
+                  class="">
+                  is.regexp
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isargument'
+                  class="">
+                  is.argument
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#issymbol'
+                  class="">
+                  is.symbol
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ispromise'
+                  class="">
+                  is.promise
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#issupportsymbol'
+                  class="">
+                  is.support.symbol
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#issupportpromise'
+                  class="">
+                  is.support.promise
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isplatformnode'
+                  class="">
+                  is.platform.node
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isplatformbrowser'
+                  class="">
+                  is.platform.browser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#exports'
+                  class="">
+                  exports
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='is'>
+      is
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>executor of checks to delegate a data for checking
+have a ability use upper case when string annotation name checks used</p>
+
+
+  <div class='pre p1 fill-light mt0'>is(check: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, any: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>check</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    it can be name of branch/check
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>any</span> <code class='quiet'>(any)</code>
+	    it can be name of branch/check
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// the same</span>
+is(<span class="hljs-string">'platform'</span>, <span class="hljs-string">'browser'</span>);
+is.platform(<span class="hljs-string">'browser'</span>);
+is.platform.browser();</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='istypeof'>
+      is.typeof
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>typeof return name of the data type
+it can return all 10 data types plus new data types of ES6.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.typeof(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.typeof([]);      <span class="hljs-comment">// =&gt; 'array'</span>
+is(<span class="hljs-string">'typeof'</span>, []);   <span class="hljs-comment">// =&gt; 'array'</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isnan'>
+      is.nan
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only NaN</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.nan(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.nan(<span class="hljs-literal">NaN</span>);        <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'NaN'</span>, <span class="hljs-literal">NaN</span>);     <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'NaN'</span>, <span class="hljs-string">'NaN'</span>);   <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isinfinity'>
+      is.infinity
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only infinity's</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.infinity(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.infinity(-<span class="hljs-literal">Infinity</span>);                     <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-literal">Infinity</span>);                   <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>);    <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isnull'>
+      is.null
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only null</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.null(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.null(<span class="hljs-literal">null</span>);      <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'null'</span>, <span class="hljs-literal">null</span>);   <span class="hljs-comment">// =&gt; true</span>
+<span class="hljs-comment">// otherwise false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isnumber'>
+      is.number
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only numbers (like a native typeof)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.number(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.number(<span class="hljs-number">1</span>);         <span class="hljs-comment">// =&gt; true</span>
+is.number(<span class="hljs-literal">NaN</span>);       <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'number'</span>, <span class="hljs-literal">null</span>);   <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isstring'>
+      is.string
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only strings</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.string(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.string(<span class="hljs-string">''</span>);          <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'string'</span>, <span class="hljs-string">'null'</span>);   <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'string'</span>, []);       <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isboolean'>
+      is.boolean
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only booleans</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.boolean(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.boolean(<span class="hljs-literal">true</span>);          <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'boolean'</span>, <span class="hljs-literal">false</span>);      <span class="hljs-comment">// =&gt; true</span>
+<span class="hljs-comment">// otherwise false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isfunction'>
+      is.function
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only functions</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.function(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.function(<span class="hljs-built_in">Function</span>);      <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Function</span>);   <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isarray'>
+      is.array
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only array</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.array(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.array([]);           <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'array'</span>, [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]);     <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'array'</span>, <span class="hljs-string">'1,2'</span>);     <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isobject'>
+      is.object
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only objects. Except null and array</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.object(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.object({});          <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'object'</span>, {<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>});    <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'object'</span>, []);       <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'object'</span>, <span class="hljs-literal">null</span>);     <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isundefined'>
+      is.undefined
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only undefined</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.undefined(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.undefined(<span class="hljs-literal">undefined</span>);    <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'undefined'</span>, <span class="hljs-keyword">void</span>(<span class="hljs-number">0</span>));   <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isdefined'>
+      is.defined
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>always success except undefined</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.defined(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.defined(<span class="hljs-literal">null</span>);       <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'defined'</span>, <span class="hljs-number">0</span>);       <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'defined'</span>, <span class="hljs-keyword">void</span>(<span class="hljs-number">0</span>)); <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='is_object'>
+      is._object
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only objects of customers (developers)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is._object(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is._object({});                     <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'_object'</span>, {<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>});               <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</span> (<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">q</span> </span>{}));    <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'_object'</span>, <span class="hljs-literal">null</span>);                <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>);            <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>);           <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='is_number'>
+      is._number
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only numbers not NaN or Infinity or NUMBER more than possible to consider</p>
+
+
+  <div class='pre p1 fill-light mt0'>is._number(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is._number(<span class="hljs-number">1</span>);         <span class="hljs-comment">// =&gt; true</span>
+is._number(<span class="hljs-literal">NaN</span>);       <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_number'</span>, <span class="hljs-literal">null</span>);   <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_number'</span>, <span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>);   <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='is_equal'>
+      is._equal
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>strict comparison to equivalent between arguments</p>
+<p>* circular structure cannot be equaled. It returns false</p>
+
+
+  <div class='pre p1 fill-light mt0'>is._equal(first: any, second: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>first</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>second</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is(<span class="hljs-string">'_equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">2</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);  <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>: <span class="hljs-built_in">Function</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}}]);<span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-string">'1'</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);<span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'_equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);  <span class="hljs-comment">// =&gt; true</span>
+is._equal();                        <span class="hljs-comment">// =&gt; true becose (undefined, undefined)</span>
+is._equal(<span class="hljs-literal">NaN</span>, <span class="hljs-literal">NaN</span>);                <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isequal'>
+      is.equal
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>comparison to equivalent between arguments
+ignores difference in functions
+ignores data types difference if it equivalent (1,'1')</p>
+<p>* circular structure cannot be equaled. It returns false</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.equal(first: any, second: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>first</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>second</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">2</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);  <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-string">'1'</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);<span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);  <span class="hljs-comment">// =&gt; true</span>
+is.equal();                        <span class="hljs-comment">// =&gt; true becose (undefined, undefined)</span>
+is.equal(<span class="hljs-literal">NaN</span>, <span class="hljs-literal">NaN</span>);                <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>: <span class="hljs-built_in">Function</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}}]);<span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isempty'>
+      is.empty
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>check the data that may contain child elements. Otherwise returns false.</p>
+<p>* can work not safe and throws an error when data is incorrect.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.empty(data: any, notSafe: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    without "notSafe" can check any data type
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>notSafe</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>?
+            = <code>false</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.empty([]);        <span class="hljs-comment">// true</span>
+is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">''</span>);     <span class="hljs-comment">// true</span>
+is(<span class="hljs-string">'empty'</span>, {});     <span class="hljs-comment">// true</span>
+is.empty([<span class="hljs-number">1</span>]);       <span class="hljs-comment">// true</span>
+is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">'[]'</span>);   <span class="hljs-comment">// true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isfinite'>
+      is.finite
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine only numbers of possible to consider</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.finite(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.finite(<span class="hljs-number">1</span>);         <span class="hljs-comment">// =&gt; true</span>
+is.finite(<span class="hljs-literal">NaN</span>);       <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'finite'</span>, <span class="hljs-literal">null</span>);   <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'finite'</span>, <span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>);   <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='iscountable'>
+      is.countable
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine value can be involved in mathematical operations</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.countable(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.countable(<span class="hljs-number">1</span>);         <span class="hljs-comment">// =&gt; true</span>
+is.countable(<span class="hljs-string">'1'</span>);       <span class="hljs-comment">// =&gt; true</span>
+is.countable(<span class="hljs-literal">true</span>);      <span class="hljs-comment">// =&gt; true</span>
+is.countable(<span class="hljs-literal">NaN</span>);       <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'countable'</span>, <span class="hljs-literal">null</span>);   <span class="hljs-comment">// =&gt; false</span>
+is(<span class="hljs-string">'countable'</span>, <span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>*<span class="hljs-number">9999999</span>);   <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isdate'>
+      is.date
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine object of native Date ( some things like (new Date()) instanceof Date )</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.date(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.date(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>);      <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'date'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>);   <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='iserror'>
+      is.error
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine object of error</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.error(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.error(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>);        <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>); <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isregexp'>
+      is.regexp
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine RegExp.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.regexp(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.regexp(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>);  <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'RegExp'</span>, /<span class="hljs-number">1</span>/g);     <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'regexp'</span>, <span class="hljs-string">'/1/g'</span>);   <span class="hljs-comment">// =&gt; false because it isn't RegExp</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isargument'>
+      is.argument
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine object arguments.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.argument(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">var</span> args; <span class="hljs-comment">// get object arguments</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ args = <span class="hljs-built_in">arguments</span>; })();
+is.argument(args);          <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'argument'</span>, args);       <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'argument'</span>, []);         <span class="hljs-comment">// =&gt; false</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='issymbol'>
+      is.symbol
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine instance Symbol. (safety for es5)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.symbol(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.symbol(<span class="hljs-built_in">Symbol</span>());     <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'symbol'</span>, <span class="hljs-built_in">Symbol</span>());  <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='ispromise'>
+      is.promise
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine instance Promise.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.promise(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is.promise(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}));  <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'promise'</span>, q.defer().promise);       <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'promise'</span>, {<span class="hljs-attr">then</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}});    <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='issupportsymbol'>
+      is.support.symbol
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine platform support for Symbol (save)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.support.symbol(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is(<span class="hljs-string">'support'</span>, <span class="hljs-string">'symbol'</span>);
+is.support(<span class="hljs-string">'symbol'</span>);
+is.support.symbol();</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='issupportpromise'>
+      is.support.promise
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine platform support for Promise (save)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.support.promise(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is(<span class="hljs-string">'support'</span>, <span class="hljs-string">'promise'</span>);
+is.support(<span class="hljs-string">'promise'</span>);
+is.support.promise();</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isplatformnode'>
+      is.platform.node
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine platform Node.js (save)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.platform.node(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is(<span class="hljs-string">'platform'</span>, <span class="hljs-string">'node'</span>); <span class="hljs-comment">// =&gt; true</span>
+is.platform(<span class="hljs-string">'node'</span>);    <span class="hljs-comment">// =&gt; true</span>
+is.platform.node();     <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isplatformbrowser'>
+      is.platform.browser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine platform browser (save)</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.platform.browser(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>is(<span class="hljs-string">'platform'</span>, <span class="hljs-string">'browser'</span>); <span class="hljs-comment">// =&gt; true</span>
+is.platform(<span class="hljs-string">'browser'</span>);    <span class="hljs-comment">// =&gt; true</span>
+is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='exports'>
+      exports
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>defination on platforms (both variants on platform like Electron)</p>
+<p>bower i --save s-is</p>
+<p>npm i --save s-is</p>
+
+
+  <div class='pre p1 fill-light mt0'>exports</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-built_in">window</span>.is                   <span class="hljs-comment">// in browser</span></pre>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">var</span> is = <span class="hljs-built_in">require</span>(<span class="hljs-string">'s-is'</span>)    <span class="hljs-comment">// in Node.js</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

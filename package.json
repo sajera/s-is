@@ -5,7 +5,7 @@
   "main": "s-is.min.js",
   "scripts": {
     "tables": "node test/write-tables",
-    "rebuild": "gulp build&gulp doc",
+    "rebuild": "gulp build&gulp doc&gulp doc-md",
     "test": "gulp lint&gulp test",
     "debug": "devtool s-is"
   },

@@ -51,7 +51,6 @@ gulp.task('test', function ( done ) {
 gulp.task('build', ['concat', 'minify'], function () {
     gulp.start('lint');
     gulp.start('test');
-    gulp.start('doc');
 });
 
 gulp.task('watch', ['build'], function () {
@@ -60,7 +59,7 @@ gulp.task('watch', ['build'], function () {
 
 });
 
-gulp.task('doc', /*['concat'],*/ function () {
+gulp.task('doc', function () {
     var pkg = require('./package.json');
     var doc = require('gulp-documentation');
     return gulp.src('s-is.js')
@@ -77,6 +76,18 @@ gulp.task('doc-md', function () {
     var doc = require('gulp-documentation');
     return gulp.src('s-is.js')
         .pipe( doc('md', {}, {
+            name: pkg.name.toUpperCase(),
+            version: pkg.version,
+            license: pkg.license
+        }) )
+        .pipe( gulp.dest('doc') );
+});
+
+gulp.task('doc-json', function () {
+    var pkg = require('./package.json');
+    var doc = require('gulp-documentation');
+    return gulp.src('s-is.js')
+        .pipe( doc('json', {}, {
             name: pkg.name.toUpperCase(),
             version: pkg.version,
             license: pkg.license

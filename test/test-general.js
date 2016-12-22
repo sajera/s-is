@@ -35,6 +35,7 @@ describe('GENERAL', function () {
         expect( dual('infinity', Infinity)      ).to.equal(true);
         expect( dual('infinity', 9999999*9999999*9999999) ).to.equal(true);
         expect( dual('infinity', 'Infinity')    ).to.equal(false);
+        expect( dual('infinity', Symbol())      ).to.equal(false);
         expect( dual('infinity', null)          ).to.equal(false);
         expect( dual('infinity', NaN)           ).to.equal(false);
         expect( dual('infinity', 0)             ).to.equal(false);

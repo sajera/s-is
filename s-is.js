@@ -58,10 +58,7 @@ var types = {
      * @function
      * @public
      */
-    'infinity': function ( data ) {
-        return data == data+1;
-        // return data === Infinity || data === -Infinity;
-    },
+    'infinity': function ( data ) { return data == data+1; },
     /**
      * It determine only null
      * 

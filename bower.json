@@ -1,7 +1,6 @@
 {
     "name": "s-is",
-    "main": "is.min.js",
-    "version": "1.2.0",
+    "main": "s-is.min.js",
     "private": false,
     "description": "A simple way to ensure the correctness of the target data.",
     "ignore": [

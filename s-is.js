@@ -1,5 +1,5 @@
 /*
- * s-is    
+ * s-is version 1.3.7 at 2016-12-23
  * @license MIT License Copyright (c) 2016 Serhii Perekhrest <allsajera@gmail.com> ( Sajera )    
  */
 /** @ignore */
@@ -58,7 +58,7 @@ var types = {
      * @function
      * @public
      */
-    'infinity': function ( data ) { return !is.symbol(data) && data == data+1; },
+    'infinity': function ( data ) { return is.number( data ) && data == data+1; },
     /**
      * It determine only null
      * 
@@ -447,7 +447,9 @@ var helpers = {
      * @function
      * @public
      */
-    'countable': function ( data ) { return !is.symbol(data) && !is.infinity(data) && !is.array(data) && data*1 == data && data != data+1;; },
+    'countable': function ( data ) {
+        return !is.symbol( data ) && !is.infinity( data ) && !is.array( data ) && data*1 == data;
+    },
     /*-------------------------------------------------
         addition js data detection
     ---------------------------------------------------*/

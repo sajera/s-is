@@ -300,6 +300,27 @@ is._equal(NaN, NaN);                // => true
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
+# is.class
+
+It determine classes.
+
+**Parameters**
+
+-   `data` **any** 
+
+**Examples**
+
+```javascript
+class q {}
+class q1 extends q {}
+function Class (){}
+is.class( Class );      // => false
+is.class( q );          // => true
+is('Class', q1 );       // => true
+```
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
 # is.equal
 
 comparison to equivalent between arguments

@@ -292,7 +292,25 @@ var strict = {
         }
         // expect its case is error
         return false;
-    }
+    },
+    /**
+     * It determine classes.
+     * 
+     * @example
+        class q {}
+        class q1 extends q {}
+        function Class (){}
+        is.class( Class );      // => false
+        is.class( q );          // => true
+        is('Class', q1 );       // => true
+     *
+     * @name is.class
+     * @param { any } data
+     * @returns { Boolean }
+     * @function
+     * @public
+     */
+    'class': function ( data ) { return is.function( data ) && /^class/.test(data.toString()); },
     /*
      * which data types requires a strict detect ?
      * @returns: { Boolean }
@@ -568,6 +586,7 @@ function objEqual ( first, second ) {
             if ( k2.indexOf(k1[key]) == -1 || !helpers.equal(first[k1[key]], second[k1[key]]) ) return false;
     }
     // i can not find any differents
+
     return true;
 }
 /*-------------------------------------------------

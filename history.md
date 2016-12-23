@@ -1,7 +1,19 @@
+## version 1.4.0:
+
+**Strict mode:**
+> class
+
+--------------
+## version 1.3.7:
+
+save methods from errors
+
+--------------
 ## version 1.3.5:
 
 added documentation
 
+--------------
 ## version 1.3.0:
 
 added tests and lint scripts

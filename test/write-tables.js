@@ -44,6 +44,7 @@ var testData = {
     'new Promise()'      : new Promise(new Function),
     'new Error()'        : new Error(),
     'Symbol()'           : Symbol(),
+    'class q {}'         : class q {},
     'Object arguments>[1]': testArgs,
     '9999999*9999999*9999999': 9999999*9999999*9999999
 };
@@ -94,7 +95,7 @@ console.log(table('GENERAL',
 ), '\n');
 
 console.log(table('STRICT',
-    ['_object', '_number', 'defined']
+    ['_object', '_number', 'defined', 'class']
 ),'\n');
 
 console.log(table('HELPERS',

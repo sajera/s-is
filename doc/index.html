@@ -185,6 +185,16 @@
               
                 
                 <li><a
+                  href='#isclass'
+                  class="">
+                  is.class
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#isequal'
                   class="">
                   is.equal
@@ -1557,6 +1567,84 @@ is(<span class="hljs-string">'_equal'</span>, [<span class="hljs-number">1</span
 is(<span class="hljs-string">'_equal'</span>, [<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}],[<span class="hljs-number">1</span>,{<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>}]);  <span class="hljs-comment">// =&gt; true</span>
 is._equal();                        <span class="hljs-comment">// =&gt; true becose (undefined, undefined)</span>
 is._equal(<span class="hljs-literal">NaN</span>, <span class="hljs-literal">NaN</span>);                <span class="hljs-comment">// =&gt; true</span></pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isclass'>
+      is.class
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>It determine classes.</p>
+
+
+  <div class='pre p1 fill-light mt0'>is.class(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">q</span> </span>{}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">q1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">q</span> </span>{}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Class</span> (<span class="hljs-params"></span>)</span>{}
+is.class( Class );      <span class="hljs-comment">// =&gt; false</span>
+is.class( q );          <span class="hljs-comment">// =&gt; true</span>
+is(<span class="hljs-string">'Class'</span>, q1 );       <span class="hljs-comment">// =&gt; true</span></pre>
     
   
 

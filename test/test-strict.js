@@ -65,4 +65,14 @@ describe('STRICT', function () {
         expect( dual('_equal', [1,{x: Function}],[1,{x:function(){}}]) ).to.equal(false);
     });
 
+    it('is.class', function () {
+        class q {};
+        class q1 extends q {};
+        function Class () {};
+        expect( dual('class', q )                   ).to.equal(true);
+        expect( dual('class', q1)                   ).to.equal(true);
+        expect( dual('class', Class )               ).to.equal(false);
+        expect( dual('class', new Function)         ).to.equal(false);
+    });
+
 });

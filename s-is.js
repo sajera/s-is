@@ -1,5 +1,5 @@
 /*
- * s-is version 1.3.7 at 2016-12-23
+ * s-is version 1.4.0 at 2016-12-27
  * @license MIT License Copyright (c) 2016 Serhii Perekhrest <allsajera@gmail.com> ( Sajera )    
  */
 /** @ignore */
@@ -250,6 +250,24 @@ var strict = {
      */
     '_number': function ( data ) { return is.number( data ) && !is.nan( data ) && data != data+1; },
     /**
+     * It determine classes.
+     * 
+     * @example
+        class q {}
+        class q1 extends q {}
+        function Class (){}
+        is.class( Class );      // => false
+        is.class( q );          // => true
+        is('Class', q1 );       // => true
+     *
+     * @name is.class
+     * @param { any } data
+     * @returns { Boolean }
+     * @function
+     * @public
+     */
+    'class': function ( data ) { return is.function( data ) && /^class/.test(data.toString()); },
+    /**
      * @description 
         strict comparison to equivalent between arguments
         
@@ -293,24 +311,6 @@ var strict = {
         // expect its case is error
         return false;
     },
-    /**
-     * It determine classes.
-     * 
-     * @example
-        class q {}
-        class q1 extends q {}
-        function Class (){}
-        is.class( Class );      // => false
-        is.class( q );          // => true
-        is('Class', q1 );       // => true
-     *
-     * @name is.class
-     * @param { any } data
-     * @returns { Boolean }
-     * @function
-     * @public
-     */
-    'class': function ( data ) { return is.function( data ) && /^class/.test(data.toString()); },
     /*
      * which data types requires a strict detect ?
      * @returns: { Boolean }
@@ -586,7 +586,6 @@ function objEqual ( first, second ) {
             if ( k2.indexOf(k1[key]) == -1 || !helpers.equal(first[k1[key]], second[k1[key]]) ) return false;
     }
     // i can not find any differents
-
     return true;
 }
 /*-------------------------------------------------

@@ -276,6 +276,27 @@ is('_number', 9999999*9999999*9999999);   // => false
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
+# is.class
+
+It determine classes.
+
+**Parameters**
+
+-   `data` **any** 
+
+**Examples**
+
+```javascript
+class q {}
+class q1 extends q {}
+function Class (){}
+is.class( Class );      // => false
+is.class( q );          // => true
+is('Class', q1 );       // => true
+```
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
 # is.\_equal
 
 strict comparison to equivalent between arguments
@@ -296,27 +317,6 @@ is('_equal', [1,{x:'1'}],[1,{x:1}]);// => false
 is('_equal', [1,{x:1}],[1,{x:1}]);  // => true
 is._equal();                        // => true becose (undefined, undefined)
 is._equal(NaN, NaN);                // => true
-```
-
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
-
-# is.class
-
-It determine classes.
-
-**Parameters**
-
--   `data` **any** 
-
-**Examples**
-
-```javascript
-class q {}
-class q1 extends q {}
-function Class (){}
-is.class( Class );      // => false
-is.class( q );          // => true
-is('Class', q1 );       // => true
 ```
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 

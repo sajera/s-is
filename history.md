@@ -1,3 +1,9 @@
+## version 1.4.12:
+
+fix EI exeption
+
+--------------
+
 ## version 1.4.0:
 
 **Strict mode:**

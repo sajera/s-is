@@ -1,5 +1,5 @@
 /*
- * s-is version 1.4.0 at 2016-12-27
+ * s-is version 1.4.12 at 2017-03-21
  * @license MIT License Copyright (c) 2016 Serhii Perekhrest <allsajera@gmail.com> ( Sajera )    
  */
 /** @ignore */
@@ -663,6 +663,34 @@ var platform = {
      * @returns: { Boolean }
      */
 };
+
+// MDN POLYFILL => https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+if (!Object.assign) {
+    Object.defineProperty(Object, 'assign', {
+        writable: true,
+        enumerable: false,
+        configurable: true,
+        value: function(target, firstSource) {
+            'use strict';
+            if (target === undefined || target === null) throw new TypeError('Cannot convert first argument to object');
+            var to = Object(target);
+            for (var i = 1; i < arguments.length; i++) {
+                var nextSource = arguments[i];
+                if (nextSource === undefined || nextSource === null) continue;
+                var keysArray = Object.keys(Object(nextSource));
+                for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex++) {
+                    var nextKey = keysArray[nextIndex];
+                    var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
+                    if (desc !== undefined && desc.enumerable) to[nextKey] = nextSource[nextKey];
+                }
+            }
+            return to;
+        }
+    });
+}
+
+var extend = Object.assign;
+
 /**
  * create bound function
  * with object in context and the same object in properties of bound function
@@ -676,7 +704,7 @@ var platform = {
  * @private
  */
 function dualize ( checks ) {
-    return Object.assign(is.bind(checks), checks);
+    return extend(is.bind(checks), checks);
 }
 /**
  * executor of checks to delegate a data for checking
@@ -705,7 +733,7 @@ function is ( check ) {
     build a user frendly =) executer for cheks
     easier to understand if seen as a map of the methods
 ---------------------------------------------------*/
-var is = dualize(Object.assign(
+var is = dualize(extend(
     {
         // to make an branch "platform" (addition ability of "is")
         'platform': dualize( platform ),

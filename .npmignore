@@ -11,3 +11,4 @@ gulpfile.js
 .eslintrc.json
 .gitignore
 .npmignore
+.editorconfig

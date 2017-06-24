@@ -1,41 +1,41 @@
 {
-  "name": "s-is",
-  "version": "1.4.12",
-  "description": "A simple way to ensure the correctness of the target data.",
-  "main": "s-is.min.js",
-  "scripts": {
-    "tables": "node test/write-tables",
-    "rebuild": "gulp build&gulp doc&gulp doc-md&npm run tables",
-    "test": "gulp lint&gulp test",
-    "debug": "devtool s-is"
-  },
-  "homepage": "https://github.com/sajera/s-is#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sajera/s-is.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sajera/s-is/issues"
-  },
-  "keywords": [
-    "s-is",
-    "is"
-  ],
-  "author": "Sajera: Serhii P <allsajera@gmail.com>",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^3.12.2",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-documentation": "^3.1.0",
-    "gulp-eslint": "^3.0.1",
-    "gulp-mocha": "^3.0.1",
-    "gulp-order": "^1.1.1",
-    "gulp-uglify": "^2.0.0",
-    "gulp-wrap": "^0.13.0",
-    "mocha": "^3.2.0",
-    "q": "^1.4.1"
-  }
+    "name": "s-is",
+    "version": "1.4.12",
+    "description": "A simple way to ensure the correctness of the target data.",
+    "main": "s-is.min.js",
+    "scripts": {
+        "tables": "node test/write-tables",
+        "rebuild": "gulp build&gulp doc&gulp doc-md&npm run tables",
+        "test": "gulp lint&gulp test",
+        "debug": "devtool s-is"
+    },
+    "homepage": "https://github.com/sajera/s-is#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sajera/s-is.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sajera/s-is/issues"
+    },
+    "keywords": [
+        "s-is",
+        "is"
+    ],
+    "author": "Sajera: Serhii P <allsajera@gmail.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "eslint": "^3.12.2",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-documentation": "^3.1.0",
+        "gulp-eslint": "^3.0.1",
+        "gulp-mocha": "^3.0.1",
+        "gulp-order": "^1.1.1",
+        "gulp-uglify": "^2.0.0",
+        "gulp-wrap": "^0.13.0",
+        "mocha": "^3.2.0",
+        "q": "^1.4.1"
+    }
 }

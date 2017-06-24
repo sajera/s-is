@@ -1,6 +1,6 @@
 {
     "name": "s-is",
-    "version": "1.4.12",
+    "version": "1.4.14",
     "description": "A simple way to ensure the correctness of the target data.",
     "main": "s-is.min.js",
     "scripts": {

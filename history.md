@@ -1,5 +1,11 @@
 ## version 1.4.12:
 
++ source editorconfig
+
+--------------
+
+## version 1.4.12:
+
 fix EI exeption
 
 --------------

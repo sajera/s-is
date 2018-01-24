@@ -7,8 +7,8 @@ have a ability use upper case when string annotation name checks used
 
 **Parameters**
 
--   `check` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** it can be name of branch/check
--   `any`  it can be name of branch/check
+-   `check` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** it can be name of branch/check
+-   `null-null` **any** it can be name of branch/check
 
 **Examples**
 
@@ -19,7 +19,7 @@ is.platform('browser');
 is.platform.browser();
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.typeof
 
@@ -37,7 +37,7 @@ is.typeof([]);      // => 'array'
 is('typeof', []);   // => 'array'
 ```
 
-Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 ## is.nan
 
@@ -55,7 +55,7 @@ is('NaN', NaN);     // => true
 is('NaN', 'NaN');   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.infinity
 
@@ -73,7 +73,7 @@ is('Infinity', Infinity);                   // => true
 is('Infinity', 9999999*9999999*9999999);    // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.null
 
@@ -91,9 +91,13 @@ is('null', null);   // => true
 // otherwise false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.number
+
+-   **See: [is.finity](is.finity) more specific determine**
+-   **See: [is.\_number](#is_number) more specific determine**
+-   **See: [is.countable](#iscountable) less specific determine**
 
 It determine only numbers (like a native typeof)
 
@@ -109,7 +113,7 @@ is.number(NaN);       // => true
 is('number', null);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.string
 
@@ -127,7 +131,7 @@ is('string', 'null');   // => true
 is('string', []);       // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.boolean
 
@@ -145,7 +149,7 @@ is('boolean', false);      // => true
 // otherwise false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.function
 
@@ -162,7 +166,7 @@ is.function(Function);      // => true
 is('function', Function);   // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.array
 
@@ -180,7 +184,7 @@ is('array', [1,2]);     // => true
 is('array', '1,2');     // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.object
 
@@ -199,9 +203,11 @@ is('object', []);       // => false
 is('object', null);     // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.undefined
+
+-   **See: [is.\_object](#is_object) more specific determine**
 
 It determine only undefined
 
@@ -216,7 +222,7 @@ is.undefined(undefined);    // => true
 is('undefined', void(0));   // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.defined
 
@@ -234,9 +240,11 @@ is('defined', 0);       // => true
 is('defined', void(0)); // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.\_object
+
+-   **See: [is.object](#isobject) less specific determine**
 
 It determine only objects of customers (developers)
 
@@ -255,9 +263,13 @@ is('_object', new Date);            // => false
 is('_object', new Error);           // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.\_number
+
+-   **See: [is.finity](is.finity) alias**
+-   **See: [is.number](#isnumber) less specific determine**
+-   **See: [is.countable](#iscountable) less specific determine**
 
 It determine only numbers not NaN or Infinity or NUMBER more than possible to consider
 
@@ -274,7 +286,7 @@ is('_number', null);   // => false
 is('_number', 9999999*9999999*9999999);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.class
 
@@ -295,9 +307,11 @@ is.class( q );          // => true
 is('Class', q1 );       // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.\_equal
+
+-   **See: [is.equal](#isequal) less specific determine**
 
 strict comparison to equivalent between arguments
 
@@ -319,9 +333,11 @@ is._equal();                        // => true becose (undefined, undefined)
 is._equal(NaN, NaN);                // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.equal
+
+-   **See: [is.\_equal](#is_equal) more specific determine**
 
 comparison to equivalent between arguments
 ignores difference in functions
@@ -345,9 +361,11 @@ is.equal(NaN, NaN);                // => true
 is('equal', [1,{x: Function}],[1,{x:function(){}}]);// => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.empty
+
+-   **See: <https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug> without fix**
 
 check the data that may contain child elements. Otherwise returns false.
 
@@ -356,7 +374,7 @@ check the data that may contain child elements. Otherwise returns false.
 **Parameters**
 
 -   `data` **any** without "notSafe" can check any data type
--   `notSafe` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?**  (optional, default `false`)
+-   `notSafe` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**  (optional, default `false`)
 
 **Examples**
 
@@ -368,9 +386,13 @@ is.empty([1]);       // true
 is('empty', '[]');   // true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.finite
+
+-   **See: [is.\_number](#is_number) alias**
+-   **See: [is.number](#isnumber) less specific determine**
+-   **See: [is.countable](#iscountable) less specific determine**
 
 It determine only numbers of possible to consider
 
@@ -387,9 +409,13 @@ is('finite', null);   // => false
 is('finite', 9999999*9999999*9999999);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.countable
+
+-   **See: [is.\_number](#is_number) more specific determine**
+-   **See: [is.number](#isnumber) more specific determine**
+-   **See: [is.finite](#isfinite) more specific determine**
 
 It determine value can be involved in mathematical operations
 
@@ -408,7 +434,7 @@ is('countable', null);   // => false
 is('countable', 9999999*9999999*9999999);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.date
 
@@ -425,7 +451,7 @@ is.date(new Date);      // => true
 is('date', new Date);   // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.error
 
@@ -442,7 +468,7 @@ is.error(new Error);        // => true
 is('error', new TypeError); // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.regexp
 
@@ -460,7 +486,7 @@ is('RegExp', /1/g);     // => true
 is('regexp', '/1/g');   // => false because it isn't RegExp
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.argument
 
@@ -480,7 +506,7 @@ is('argument', args);       // => true
 is('argument', []);         // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.symbol
 
@@ -497,7 +523,7 @@ is.symbol(Symbol());     // => true
 is('symbol', Symbol());  // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.promise
 
@@ -515,7 +541,7 @@ is('promise', q.defer().promise);       // => true
 is('promise', {then: function(){}});    // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.support.symbol
 
@@ -529,7 +555,7 @@ is.support('symbol');
 is.support.symbol();
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.support.promise
 
@@ -543,7 +569,7 @@ is.support('promise');
 is.support.promise();
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.platform.node
 
@@ -557,7 +583,7 @@ is.platform('node');    // => true
 is.platform.node();     // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## is.platform.browser
 
@@ -571,7 +597,7 @@ is.platform('browser');    // => true
 is.platform.browser();     // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## extend
 
@@ -579,9 +605,9 @@ replace Object.assign
 
 **Parameters**
 
--   `any` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** count
+-   `any` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** count
 
-Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
 
 ## exports
 

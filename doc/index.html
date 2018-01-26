@@ -2,18 +2,18 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>S-IS 1.4.14 | Documentation</title>
+  <title>s-is 1.4.14 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
   <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
 </head>
-<body class='documentation'>
-  <div class='max-width-4 mx-auto'>
-    <div class='clearfix md-mxn2'>
-      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
-          <h3 class='mb0 no-anchor'>S-IS</h3>
+          <h3 class='mb0 no-anchor'>s-is</h3>
           <div class='mb1'><code>1.4.14</code></div>
           <input
             placeholder='Filter'
@@ -360,7 +360,7 @@
           </div>
         </div>
       </div>
-      <div class='fix-margin-3'>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
         
           
             <section class='p2 mb2 clearfix bg-white minishadow'>
@@ -380,10 +380,11 @@
 have a ability use upper case when string annotation name checks used</p>
 
 
-  <div class='pre p1 fill-light mt0'>is(check: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, any: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is(check: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, null-null: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -396,7 +397,7 @@ have a ability use upper case when string annotation name checks used</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>check</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+            <span class='code bold'>check</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
 	    it can be name of branch/check
 
           </div>
@@ -405,7 +406,7 @@ have a ability use upper case when string annotation name checks used</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>any</span> <code class='quiet'>(any)</code>
+            <span class='code bold'>null-null</span> <code class='quiet'>(any)</code>
 	    it can be name of branch/check
 
           </div>
@@ -420,7 +421,7 @@ have a ability use upper case when string annotation name checks used</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -467,10 +468,11 @@ is.platform.browser();</pre>
 it can return all 10 data types plus new data types of ES6.</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.typeof(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+  <div class='pre p1 fill-light mt0'>is.typeof(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
+  
   
   
   
@@ -497,7 +499,7 @@ it can return all 10 data types plus new data types of ES6.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         
 
       
@@ -541,10 +543,11 @@ is(<span class="hljs-string">'typeof'</span>, []);   <span class="hljs-comment">
   <p>It determine only NaN</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.nan(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.nan(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -571,7 +574,7 @@ is(<span class="hljs-string">'typeof'</span>, []);   <span class="hljs-comment">
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -616,10 +619,11 @@ is(<span class="hljs-string">'NaN'</span>, <span class="hljs-string">'NaN'</span
   <p>It determine only infinity's</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.infinity(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.infinity(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -646,7 +650,7 @@ is(<span class="hljs-string">'NaN'</span>, <span class="hljs-string">'NaN'</span
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -691,10 +695,11 @@ is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-number">999999
   <p>It determine only null</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.null(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.null(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -721,7 +726,7 @@ is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-number">999999
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -766,10 +771,11 @@ is(<span class="hljs-string">'null'</span>, <span class="hljs-literal">null</spa
   <p>It determine only numbers (like a native typeof)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.number(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.number(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -796,7 +802,7 @@ is(<span class="hljs-string">'null'</span>, <span class="hljs-literal">null</spa
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -841,10 +847,11 @@ is(<span class="hljs-string">'number'</span>, <span class="hljs-literal">null</s
   <p>It determine only strings</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.string(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.string(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -871,7 +878,7 @@ is(<span class="hljs-string">'number'</span>, <span class="hljs-literal">null</s
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -916,10 +923,11 @@ is(<span class="hljs-string">'string'</span>, []);       <span class="hljs-comme
   <p>It determine only booleans</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.boolean(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.boolean(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -946,7 +954,7 @@ is(<span class="hljs-string">'string'</span>, []);       <span class="hljs-comme
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -991,10 +999,11 @@ is(<span class="hljs-string">'boolean'</span>, <span class="hljs-literal">false<
   <p>It determine only functions</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.function(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.function(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1021,7 +1030,7 @@ is(<span class="hljs-string">'boolean'</span>, <span class="hljs-literal">false<
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1065,10 +1074,11 @@ is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Func
   <p>It determine only array</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.array(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.array(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1095,7 +1105,7 @@ is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Func
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1140,10 +1150,11 @@ is(<span class="hljs-string">'array'</span>, <span class="hljs-string">'1,2'</sp
   <p>It determine only objects. Except null and array</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.object(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.object(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1170,7 +1181,7 @@ is(<span class="hljs-string">'array'</span>, <span class="hljs-string">'1,2'</sp
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1216,10 +1227,11 @@ is(<span class="hljs-string">'object'</span>, <span class="hljs-literal">null</s
   <p>It determine only undefined</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.undefined(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.undefined(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1246,7 +1258,7 @@ is(<span class="hljs-string">'object'</span>, <span class="hljs-literal">null</s
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1290,10 +1302,11 @@ is(<span class="hljs-string">'undefined'</span>, <span class="hljs-keyword">void
   <p>always success except undefined</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.defined(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.defined(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1320,7 +1333,7 @@ is(<span class="hljs-string">'undefined'</span>, <span class="hljs-keyword">void
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1365,10 +1378,11 @@ is(<span class="hljs-string">'defined'</span>, <span class="hljs-keyword">void</
   <p>It determine only objects of customers (developers)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is._object(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is._object(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1395,7 +1409,7 @@ is(<span class="hljs-string">'defined'</span>, <span class="hljs-keyword">void</
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1443,10 +1457,11 @@ is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</s
   <p>It determine only numbers not NaN or Infinity or NUMBER more than possible to consider</p>
 
 
-  <div class='pre p1 fill-light mt0'>is._number(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is._number(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1473,7 +1488,7 @@ is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</s
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1519,10 +1534,11 @@ is(<span class="hljs-string">'_number'</span>, <span class="hljs-number">9999999
   <p>It determine classes.</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.class(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.class(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1549,7 +1565,7 @@ is(<span class="hljs-string">'_number'</span>, <span class="hljs-number">9999999
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1598,10 +1614,11 @@ is(<span class="hljs-string">'Class'</span>, q1 );       <span class="hljs-comme
 <p>* circular structure cannot be equaled. It returns false</p>
 
 
-  <div class='pre p1 fill-light mt0'>is._equal(first: any, second: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is._equal(first: any, second: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1636,7 +1653,7 @@ is(<span class="hljs-string">'Class'</span>, q1 );       <span class="hljs-comme
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1687,10 +1704,11 @@ ignores data types difference if it equivalent (1,'1')</p>
 <p>* circular structure cannot be equaled. It returns false</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.equal(first: any, second: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.equal(first: any, second: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1725,7 +1743,7 @@ ignores data types difference if it equivalent (1,'1')</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1774,10 +1792,11 @@ is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>
 <p>* can work not safe and throws an error when data is incorrect.</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.empty(data: any, notSafe: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>?): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.empty(data: any, notSafe: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1799,7 +1818,7 @@ is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>notSafe</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>?
+            <span class='code bold'>notSafe</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
             = <code>false</code>)</code>
 	    
           </div>
@@ -1814,7 +1833,7 @@ is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1861,10 +1880,11 @@ is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">'[]'</spa
   <p>It determine only numbers of possible to consider</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.finite(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.finite(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1891,7 +1911,7 @@ is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">'[]'</spa
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -1937,10 +1957,11 @@ is(<span class="hljs-string">'finite'</span>, <span class="hljs-number">9999999<
   <p>It determine value can be involved in mathematical operations</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.countable(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.countable(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -1967,7 +1988,7 @@ is(<span class="hljs-string">'finite'</span>, <span class="hljs-number">9999999<
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2015,10 +2036,11 @@ is(<span class="hljs-string">'countable'</span>, <span class="hljs-number">99999
   <p>It determine object of native Date ( some things like (new Date()) instanceof Date )</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.date(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.date(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2045,7 +2067,7 @@ is(<span class="hljs-string">'countable'</span>, <span class="hljs-number">99999
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2089,10 +2111,11 @@ is(<span class="hljs-string">'date'</span>, <span class="hljs-keyword">new</span
   <p>It determine object of error</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.error(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.error(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2119,7 +2142,7 @@ is(<span class="hljs-string">'date'</span>, <span class="hljs-keyword">new</span
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2163,10 +2186,11 @@ is(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</spa
   <p>It determine RegExp.</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.regexp(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.regexp(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2193,7 +2217,7 @@ is(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</spa
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2238,10 +2262,11 @@ is(<span class="hljs-string">'regexp'</span>, <span class="hljs-string">'/1/g'</
   <p>It determine object arguments.</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.argument(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.argument(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2268,7 +2293,7 @@ is(<span class="hljs-string">'regexp'</span>, <span class="hljs-string">'/1/g'</
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2315,10 +2340,11 @@ is(<span class="hljs-string">'argument'</span>, []);         <span class="hljs-c
   <p>It determine instance Symbol. (safety for es5)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.symbol(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.symbol(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2345,7 +2371,7 @@ is(<span class="hljs-string">'argument'</span>, []);         <span class="hljs-c
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2389,10 +2415,11 @@ is(<span class="hljs-string">'symbol'</span>, <span class="hljs-built_in">Symbol
   <p>It determine instance Promise.</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.promise(data: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.promise(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2419,7 +2446,7 @@ is(<span class="hljs-string">'symbol'</span>, <span class="hljs-built_in">Symbol
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2464,10 +2491,11 @@ is(<span class="hljs-string">'promise'</span>, {<span class="hljs-attr">then</sp
   <p>It determine platform support for Symbol (save)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.support.symbol(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.support.symbol(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2481,7 +2509,7 @@ is(<span class="hljs-string">'promise'</span>, {<span class="hljs-attr">then</sp
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2526,10 +2554,11 @@ is.support.symbol();</pre>
   <p>It determine platform support for Promise (save)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.support.promise(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.support.promise(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2543,7 +2572,7 @@ is.support.symbol();</pre>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2588,10 +2617,11 @@ is.support.promise();</pre>
   <p>It determine platform Node.js (save)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.platform.node(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.platform.node(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2605,7 +2635,7 @@ is.support.promise();</pre>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2650,10 +2680,11 @@ is.platform.node();     <span class="hljs-comment">// =&gt; true</span></pre>
   <p>It determine platform browser (save)</p>
 
 
-  <div class='pre p1 fill-light mt0'>is.platform.browser(): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+  <div class='pre p1 fill-light mt0'>is.platform.browser(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
+  
   
   
   
@@ -2667,7 +2698,7 @@ is.platform.node();     <span class="hljs-comment">// =&gt; true</span></pre>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -2712,10 +2743,11 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
   <p>replace Object.assign</p>
 
 
-  <div class='pre p1 fill-light mt0'>extend(any: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  <div class='pre p1 fill-light mt0'>extend(any: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
   
   
 
+  
   
   
   
@@ -2728,7 +2760,7 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>any</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+            <span class='code bold'>any</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
 	    count
 
           </div>
@@ -2743,7 +2775,7 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
         
 
       
@@ -2791,6 +2823,7 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
   
   
   
+  
 
   
 
@@ -2822,8 +2855,8 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
         
       </div>
     </div>
-  </div>
   <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
   <script src='assets/site.js'></script>
 </body>
 </html>

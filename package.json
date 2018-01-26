@@ -26,17 +26,17 @@
     "dependencies": {},
     "devDependencies": {
         "chai": "^3.5.0",
-        "devtool": "^2.3.1",
-        "eslint": "^3.12.2",
+        "documentation": "^5.3.5",
+        "eslint": "^3.19.0",
         "gulp": "^3.9.1",
         "gulp-concat": "^2.6.1",
-        "gulp-documentation": "^3.1.0",
+        "gulp-documentation": "^3.2.1",
         "gulp-eslint": "^3.0.1",
         "gulp-mocha": "^3.0.1",
         "gulp-order": "^1.1.1",
-        "gulp-uglify": "^2.0.0",
+        "gulp-uglify": "^2.1.2",
         "gulp-wrap": "^0.13.0",
-        "mocha": "^3.2.0",
-        "q": "^1.4.1"
+        "mocha": "^3.5.3",
+        "q": "^1.5.1"
     }
 }

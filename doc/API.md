@@ -271,7 +271,7 @@ Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 -   **See: [is.number](#isnumber) less specific determine**
 -   **See: [is.countable](#iscountable) less specific determine**
 
-It determine only numbers not NaN or Infinity or NUMBER more than possible to consider
+strictly determine of numbers. Not NaN or Infinity or NUMBER more than possible to consider
 
 **Parameters**
 
@@ -373,8 +373,8 @@ check the data that may contain child elements. Otherwise returns false.
 
 **Parameters**
 
--   `data` **any** without "notSafe" can check any data type
--   `notSafe` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**  (optional, default `false`)
+-   `data` **any** 
+-   `notSafe` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** without "notSafe" can check any data type (optional, default `false`)
 
 **Examples**
 
@@ -382,8 +382,8 @@ check the data that may contain child elements. Otherwise returns false.
 is.empty([]);        // true
 is('empty', '');     // true
 is('empty', {});     // true
-is.empty([1]);       // true
-is('empty', '[]');   // true
+is.empty([1]);       // false
+is('empty', '[]');   // false
 ```
 
 Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 

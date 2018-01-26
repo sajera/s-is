@@ -599,23 +599,13 @@ is.platform.browser();     // => true
 
 Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
-## extend
-
-replace Object.assign
-
-**Parameters**
-
--   `any` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** count
-
-Returns **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
-
 ## exports
 
 defination on platforms (both variants on platform like Electron)
 
-bower i --save s-is
+bower install --save s-is
 
-npm i --save s-is
+npm install --save s-is
 
 **Examples**
 

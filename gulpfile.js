@@ -56,7 +56,7 @@ gulp.task('build', ['concat', 'minify'], function () {
 });
 
 gulp.task('watch', ['build'], function () {
-    
+
     gulp.watch('lib/*.js', ['concat', 'minify']);
 
 });

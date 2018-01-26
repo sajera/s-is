@@ -48,15 +48,13 @@ gulp.task('test', function ( done ) {
         .pipe( require('gulp-mocha')({reporter: 'nyan'}) );
 });
 
-
-
 gulp.task('build', ['concat', 'minify'], function () {
     gulp.start('lint');
     gulp.start('test');
 });
 
 gulp.task('watch', ['build'], function () {
-    
+
     gulp.watch('lib/*.js', ['concat', 'minify']);
 
 });

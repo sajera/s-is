@@ -1,13 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8' />
+  <meta charset='utf-8'>
   <title>s-is 1.4.15 | Documentation</title>
+  <meta name='description' content='A simple way to ensure the correctness of the target data.'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
-  <link href='assets/style.css' type='text/css' rel='stylesheet' />
-  <link href='assets/github.css' type='text/css' rel='stylesheet' />
-  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
 </head>
 <body class='documentation m0'>
     <div class='flex'>
@@ -19,6 +20,9 @@
             placeholder='Filter'
             id='filter-input'
             class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
             type='text' />
           <div id='toc'>
             <ul class='list-reset h5 py1-ul'>
@@ -346,14 +350,14 @@
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
-            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
           </div>
         </div>
       </div>
       <div id='split-right' class='relative overflow-auto height-viewport-100'>
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -369,8 +373,7 @@
   <p>executor of checks to delegate a data for checking
 have a ability use upper case when string annotation name checks used</p>
 
-
-  <div class='pre p1 fill-light mt0'>is(check: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, null-null: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is(check: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, null-null: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -421,6 +424,8 @@ have a ability use upper case when string annotation name checks used</p>
   
 
   
+
+  
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
@@ -436,12 +441,14 @@ is.platform.browser();</pre>
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -457,8 +464,7 @@ is.platform.browser();</pre>
   <p>typeof return name of the data type
 it can return all 10 data types plus new data types of ES6.</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.typeof(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+    <div class='pre p1 fill-light mt0'>is.typeof(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
   
   
 
@@ -499,6 +505,8 @@ it can return all 10 data types plus new data types of ES6.</p>
   
 
   
+
+  
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
@@ -512,12 +520,14 @@ is(<span class="hljs-string">'typeof'</span>, []);   <span class="hljs-comment">
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -532,8 +542,7 @@ is(<span class="hljs-string">'typeof'</span>, []);   <span class="hljs-comment">
 
   <p>It determine only NaN</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.nan(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.nan(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -569,6 +578,8 @@ is(<span class="hljs-string">'typeof'</span>, []);   <span class="hljs-comment">
 
       
     
+  
+
   
 
   
@@ -588,12 +599,14 @@ is(<span class="hljs-string">'NaN'</span>, <span class="hljs-string">'NaN'</span
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -608,8 +621,7 @@ is(<span class="hljs-string">'NaN'</span>, <span class="hljs-string">'NaN'</span
 
   <p>It determine only infinity's</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.infinity(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.infinity(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -645,6 +657,8 @@ is(<span class="hljs-string">'NaN'</span>, <span class="hljs-string">'NaN'</span
 
       
     
+  
+
   
 
   
@@ -664,12 +678,14 @@ is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-number">999999
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -684,8 +700,7 @@ is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-number">999999
 
   <p>It determine only null</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.null(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.null(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -721,6 +736,8 @@ is(<span class="hljs-string">'Infinity'</span>, <span class="hljs-number">999999
 
       
     
+  
+
   
 
   
@@ -740,12 +757,14 @@ is(<span class="hljs-string">'null'</span>, <span class="hljs-literal">null</spa
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -760,8 +779,7 @@ is(<span class="hljs-string">'null'</span>, <span class="hljs-literal">null</spa
 
   <p>It determine only numbers (like a native typeof)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.number(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.number(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -794,6 +812,29 @@ is(<span class="hljs-string">'null'</span>, <span class="hljs-literal">null</spa
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="is.finity">is.finity</a>
+ more specific determine
+
+      
+    
+      
+        <a href="#is_number">is._number</a>
+ more specific determine
+
+      
+    
+      
+        <a href="#iscountable">is.countable</a>
+ less specific determine
 
       
     
@@ -816,12 +857,14 @@ is(<span class="hljs-string">'number'</span>, <span class="hljs-literal">null</s
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -836,8 +879,7 @@ is(<span class="hljs-string">'number'</span>, <span class="hljs-literal">null</s
 
   <p>It determine only strings</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.string(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.string(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -873,6 +915,8 @@ is(<span class="hljs-string">'number'</span>, <span class="hljs-literal">null</s
 
       
     
+  
+
   
 
   
@@ -892,12 +936,14 @@ is(<span class="hljs-string">'string'</span>, []);       <span class="hljs-comme
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -912,8 +958,7 @@ is(<span class="hljs-string">'string'</span>, []);       <span class="hljs-comme
 
   <p>It determine only booleans</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.boolean(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.boolean(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -949,6 +994,8 @@ is(<span class="hljs-string">'string'</span>, []);       <span class="hljs-comme
 
       
     
+  
+
   
 
   
@@ -968,12 +1015,14 @@ is(<span class="hljs-string">'boolean'</span>, <span class="hljs-literal">false<
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -988,8 +1037,7 @@ is(<span class="hljs-string">'boolean'</span>, <span class="hljs-literal">false<
 
   <p>It determine only functions</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.function(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.function(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1030,12 +1078,16 @@ is(<span class="hljs-string">'boolean'</span>, <span class="hljs-literal">false<
   
 
   
+
+  
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>is.function(<span class="hljs-built_in">Function</span>);      <span class="hljs-comment">// =&gt; true</span>
-is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Function</span>);   <span class="hljs-comment">// =&gt; true</span></pre>
+      <pre class='p1 overflow-auto round fill-light'>is<span class="hljs-function">.<span class="hljs-keyword">function</span>(<span class="hljs-params">Function</span>);      // =&gt; <span class="hljs-title">true</span>
+<span class="hljs-title">is</span>(<span class="hljs-params"><span class="hljs-string">'function'</span>, Function</span>);   // =&gt; <span class="hljs-title">true</span></span></pre>
     
+  
+
   
 
   
@@ -1048,7 +1100,7 @@ is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Func
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1063,8 +1115,7 @@ is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Func
 
   <p>It determine only array</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.array(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.array(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1100,6 +1151,8 @@ is(<span class="hljs-string">'function'</span>, <span class="hljs-built_in">Func
 
       
     
+  
+
   
 
   
@@ -1119,12 +1172,14 @@ is(<span class="hljs-string">'array'</span>, <span class="hljs-string">'1,2'</sp
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1139,8 +1194,7 @@ is(<span class="hljs-string">'array'</span>, <span class="hljs-string">'1,2'</sp
 
   <p>It determine only objects. Except null and array</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.object(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.object(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1176,6 +1230,8 @@ is(<span class="hljs-string">'array'</span>, <span class="hljs-string">'1,2'</sp
 
       
     
+  
+
   
 
   
@@ -1196,12 +1252,14 @@ is(<span class="hljs-string">'object'</span>, <span class="hljs-literal">null</s
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1216,8 +1274,7 @@ is(<span class="hljs-string">'object'</span>, <span class="hljs-literal">null</s
 
   <p>It determine only undefined</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.undefined(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.undefined(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1250,6 +1307,17 @@ is(<span class="hljs-string">'object'</span>, <span class="hljs-literal">null</s
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="#is_object">is._object</a>
+ more specific determine
 
       
     
@@ -1271,12 +1339,14 @@ is(<span class="hljs-string">'undefined'</span>, <span class="hljs-keyword">void
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1291,8 +1361,7 @@ is(<span class="hljs-string">'undefined'</span>, <span class="hljs-keyword">void
 
   <p>always success except undefined</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.defined(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.defined(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1328,6 +1397,8 @@ is(<span class="hljs-string">'undefined'</span>, <span class="hljs-keyword">void
 
       
     
+  
+
   
 
   
@@ -1347,12 +1418,14 @@ is(<span class="hljs-string">'defined'</span>, <span class="hljs-keyword">void</
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1367,8 +1440,7 @@ is(<span class="hljs-string">'defined'</span>, <span class="hljs-keyword">void</
 
   <p>It determine only objects of customers (developers)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is._object(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is._object(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1401,6 +1473,17 @@ is(<span class="hljs-string">'defined'</span>, <span class="hljs-keyword">void</
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="#isobject">is.object</a>
+ less specific determine
 
       
     
@@ -1426,12 +1509,14 @@ is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</s
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1446,8 +1531,7 @@ is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</s
 
   <p>strictly determine of numbers. Not NaN or Infinity or NUMBER more than possible to consider</p>
 
-
-  <div class='pre p1 fill-light mt0'>is._number(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is._number(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1480,6 +1564,29 @@ is(<span class="hljs-string">'_object'</span>, <span class="hljs-keyword">new</s
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="is.finity">is.finity</a>
+ alias
+
+      
+    
+      
+        <a href="#isnumber">is.number</a>
+ less specific determine
+
+      
+    
+      
+        <a href="#iscountable">is.countable</a>
+ less specific determine
 
       
     
@@ -1503,12 +1610,14 @@ is(<span class="hljs-string">'_number'</span>, <span class="hljs-number">9999999
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1523,8 +1632,7 @@ is(<span class="hljs-string">'_number'</span>, <span class="hljs-number">9999999
 
   <p>It determine classes.</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.class(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.class(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1565,6 +1673,8 @@ is(<span class="hljs-string">'_number'</span>, <span class="hljs-number">9999999
   
 
   
+
+  
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
@@ -1582,12 +1692,14 @@ is(<span class="hljs-string">'Class'</span>, q1 );       <span class="hljs-comme
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1603,8 +1715,7 @@ is(<span class="hljs-string">'Class'</span>, q1 );       <span class="hljs-comme
   <p>strict comparison to equivalent between arguments</p>
 <p>* circular structure cannot be equaled. It returns false</p>
 
-
-  <div class='pre p1 fill-light mt0'>is._equal(first: any, second: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is._equal(first: any, second: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1645,6 +1756,17 @@ is(<span class="hljs-string">'Class'</span>, q1 );       <span class="hljs-comme
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="#isequal">is.equal</a>
+ less specific determine
 
       
     
@@ -1670,12 +1792,14 @@ is._equal(<span class="hljs-literal">NaN</span>, <span class="hljs-literal">NaN<
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1693,8 +1817,7 @@ ignores difference in functions
 ignores data types difference if it equivalent (1,'1')</p>
 <p>* circular structure cannot be equaled. It returns false</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.equal(first: any, second: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.equal(first: any, second: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1741,6 +1864,17 @@ ignores data types difference if it equivalent (1,'1')</p>
   
 
   
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="#is_equal">is._equal</a>
+ more specific determine
+
+      
+    
+  
+
+  
 
   
     <div class='py1 quiet mt1 prose-big'>Example</div>
@@ -1760,12 +1894,14 @@ is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1781,8 +1917,7 @@ is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>
   <p>check the data that may contain child elements. Otherwise returns false.</p>
 <p>* can work not safe and throws an error when data is incorrect.</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.empty(data: any, notSafe: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.empty(data: any, notSafe: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1831,6 +1966,17 @@ is(<span class="hljs-string">'equal'</span>, [<span class="hljs-number">1</span>
   
 
   
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug">https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug</a>
+ without fix
+
+      
+    
+  
+
+  
 
   
     <div class='py1 quiet mt1 prose-big'>Example</div>
@@ -1849,12 +1995,14 @@ is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">'[]'</spa
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1869,8 +2017,7 @@ is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">'[]'</spa
 
   <p>It determine only numbers of possible to consider</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.finite(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.finite(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1903,6 +2050,29 @@ is(<span class="hljs-string">'empty'</span>, <span class="hljs-string">'[]'</spa
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="#is_number">is._number</a>
+ alias
+
+      
+    
+      
+        <a href="#isnumber">is.number</a>
+ less specific determine
+
+      
+    
+      
+        <a href="#iscountable">is.countable</a>
+ less specific determine
 
       
     
@@ -1926,12 +2096,14 @@ is(<span class="hljs-string">'finite'</span>, <span class="hljs-number">9999999<
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1946,8 +2118,7 @@ is(<span class="hljs-string">'finite'</span>, <span class="hljs-number">9999999<
 
   <p>It determine value can be involved in mathematical operations</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.countable(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.countable(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -1980,6 +2151,29 @@ is(<span class="hljs-string">'finite'</span>, <span class="hljs-number">9999999<
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
+
+      
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Related</div>
+    
+      
+        <a href="#is_number">is._number</a>
+ more specific determine
+
+      
+    
+      
+        <a href="#isnumber">is.number</a>
+ more specific determine
+
+      
+    
+      
+        <a href="#isfinite">is.finite</a>
+ more specific determine
 
       
     
@@ -2005,12 +2199,14 @@ is(<span class="hljs-string">'countable'</span>, <span class="hljs-number">99999
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2025,8 +2221,7 @@ is(<span class="hljs-string">'countable'</span>, <span class="hljs-number">99999
 
   <p>It determine object of native Date ( some things like (new Date()) instanceof Date )</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.date(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.date(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2062,6 +2257,8 @@ is(<span class="hljs-string">'countable'</span>, <span class="hljs-number">99999
 
       
     
+  
+
   
 
   
@@ -2080,12 +2277,14 @@ is(<span class="hljs-string">'date'</span>, <span class="hljs-keyword">new</span
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2100,8 +2299,7 @@ is(<span class="hljs-string">'date'</span>, <span class="hljs-keyword">new</span
 
   <p>It determine object of error</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.error(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.error(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2137,6 +2335,8 @@ is(<span class="hljs-string">'date'</span>, <span class="hljs-keyword">new</span
 
       
     
+  
+
   
 
   
@@ -2155,12 +2355,14 @@ is(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</spa
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2175,8 +2377,7 @@ is(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</spa
 
   <p>It determine RegExp.</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.regexp(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.regexp(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2212,6 +2413,8 @@ is(<span class="hljs-string">'error'</span>, <span class="hljs-keyword">new</spa
 
       
     
+  
+
   
 
   
@@ -2231,12 +2434,14 @@ is(<span class="hljs-string">'regexp'</span>, <span class="hljs-string">'/1/g'</
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2251,8 +2456,7 @@ is(<span class="hljs-string">'regexp'</span>, <span class="hljs-string">'/1/g'</
 
   <p>It determine object arguments.</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.argument(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.argument(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2288,6 +2492,8 @@ is(<span class="hljs-string">'regexp'</span>, <span class="hljs-string">'/1/g'</
 
       
     
+  
+
   
 
   
@@ -2309,12 +2515,14 @@ is(<span class="hljs-string">'argument'</span>, []);         <span class="hljs-c
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2329,8 +2537,7 @@ is(<span class="hljs-string">'argument'</span>, []);         <span class="hljs-c
 
   <p>It determine instance Symbol. (safety for es5)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.symbol(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.symbol(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2366,6 +2573,8 @@ is(<span class="hljs-string">'argument'</span>, []);         <span class="hljs-c
 
       
     
+  
+
   
 
   
@@ -2384,12 +2593,14 @@ is(<span class="hljs-string">'symbol'</span>, <span class="hljs-built_in">Symbol
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2404,8 +2615,7 @@ is(<span class="hljs-string">'symbol'</span>, <span class="hljs-built_in">Symbol
 
   <p>It determine instance Promise.</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.promise(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.promise(data: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2441,6 +2651,8 @@ is(<span class="hljs-string">'symbol'</span>, <span class="hljs-built_in">Symbol
 
       
     
+  
+
   
 
   
@@ -2460,12 +2672,14 @@ is(<span class="hljs-string">'promise'</span>, {<span class="hljs-attr">then</sp
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2480,8 +2694,7 @@ is(<span class="hljs-string">'promise'</span>, {<span class="hljs-attr">then</sp
 
   <p>It determine platform support for Symbol (save)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.support.symbol(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.support.symbol(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2504,6 +2717,8 @@ is(<span class="hljs-string">'promise'</span>, {<span class="hljs-attr">then</sp
 
       
     
+  
+
   
 
   
@@ -2523,12 +2738,14 @@ is.support.symbol();</pre>
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2543,8 +2760,7 @@ is.support.symbol();</pre>
 
   <p>It determine platform support for Promise (save)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.support.promise(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.support.promise(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2567,6 +2783,8 @@ is.support.symbol();</pre>
 
       
     
+  
+
   
 
   
@@ -2586,12 +2804,14 @@ is.support.promise();</pre>
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2606,8 +2826,7 @@ is.support.promise();</pre>
 
   <p>It determine platform Node.js (save)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.platform.node(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.platform.node(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2630,6 +2849,8 @@ is.support.promise();</pre>
 
       
     
+  
+
   
 
   
@@ -2649,12 +2870,14 @@ is.platform.node();     <span class="hljs-comment">// =&gt; true</span></pre>
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2669,8 +2892,7 @@ is.platform.node();     <span class="hljs-comment">// =&gt; true</span></pre>
 
   <p>It determine platform browser (save)</p>
 
-
-  <div class='pre p1 fill-light mt0'>is.platform.browser(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
+    <div class='pre p1 fill-light mt0'>is.platform.browser(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></div>
   
   
 
@@ -2698,6 +2920,8 @@ is.platform.node();     <span class="hljs-comment">// =&gt; true</span></pre>
   
 
   
+
+  
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
@@ -2712,12 +2936,14 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2734,8 +2960,7 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
 <p>bower install --save s-is</p>
 <p>npm install --save s-is</p>
 
-
-  <div class='pre p1 fill-light mt0'>exports</div>
+    <div class='pre p1 fill-light mt0'>exports</div>
   
   
 
@@ -2744,6 +2969,8 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
   
   
   
+  
+
   
 
   
@@ -2763,6 +2990,8 @@ is.platform.browser();     <span class="hljs-comment">// =&gt; true</span></pre>
       
       <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">var</span> is = <span class="hljs-built_in">require</span>(<span class="hljs-string">'s-is'</span>)    <span class="hljs-comment">// in Node.js</span></pre>
     
+  
+
   
 
   

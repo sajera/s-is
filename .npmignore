@@ -1,14 +1,4 @@
-node_modules/*
-bower_components/*
-old/*
-lib/*
-tables/*
-test/*
-*.log
-*.md
-bower.json
-gulpfile.js
-.eslintrc.json
-.gitignore
-.npmignore
-.editorconfig
+# ignore all except output file and all things which npm never ignore
+/*
+!/s-is.js
+!/s-is.js.map

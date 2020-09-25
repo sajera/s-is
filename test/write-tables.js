@@ -2,7 +2,7 @@
 'use strict';
 
 // var is = require('./is.js');
-var is = require('../s-is.min.js');
+var is = require('../index.min.js');
 
 var max = 26;
 var low = 10;
@@ -77,7 +77,7 @@ function table ( name, methods ) {
     // make first headers row
     var table = yellow(td(name, max))+'|';
     for ( var method of methods ) table += td(method, low)+'|';
-    // data result rows    
+    // data result rows
     for (var field in testData ) {
         table+='\n'+line;
         table+=('\n'+td(field, max)+'|');

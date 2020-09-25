@@ -1,0 +1,7699 @@
+[
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "executor of checks to delegate a data for checking\nhave a ability use upper case when string annotation name checks used",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 2,
+                  "column": 70,
+                  "offset": 120
+                },
+                "indent": [
+                  1
+                ]
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 70,
+              "offset": 120
+            },
+            "indent": [
+              1
+            ]
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 70,
+          "offset": 120
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "executor of checks to delegate a data for checking\nhave a ability use upper case when string annotation name checks used",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "// the same\nis('platform', 'browser');\nis.platform('browser');\nis.platform.browser();",
+        "lineNumber": 4
+      },
+      {
+        "title": "param",
+        "description": "it can be name of branch/check",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "check"
+      },
+      {
+        "title": "param",
+        "description": "it can be name of branch/check",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "null-null"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 12,
+        "name": null
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 13
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 616,
+        "column": 0
+      },
+      "end": {
+        "line": 630,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 631,
+          "column": 0
+        },
+        "end": {
+          "line": 638,
+          "column": 1
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "// the same\nis('platform', 'browser');\nis.platform('browser');\nis.platform.browser();"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "check",
+        "lineNumber": 9,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "it can be name of branch/check",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 31,
+                      "offset": 30
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 31,
+                  "offset": 30
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 31,
+              "offset": 30
+            }
+          }
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      },
+      {
+        "title": "param",
+        "name": "null-null",
+        "lineNumber": 10,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "it can be name of branch/check",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 31,
+                      "offset": 30
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 31,
+                  "offset": 30
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 31,
+              "offset": 30
+            }
+          }
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "access": "public",
+    "name": "is",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "typeof return name of the data type\nit can return all 10 data types plus new data types of ES6.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 2,
+                  "column": 60,
+                  "offset": 95
+                },
+                "indent": [
+                  1
+                ]
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 60,
+              "offset": 95
+            },
+            "indent": [
+              1
+            ]
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 60,
+          "offset": 95
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "typeof return name of the data type\nit can return all 10 data types plus new data types of ES6.",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.typeof([]);      // => 'array'\nis('typeof', []);   // => 'array'",
+        "lineNumber": 4
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 9,
+        "name": "is.typeof"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 10
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 13,
+        "column": 4
+      },
+      "end": {
+        "line": 24,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 4
+        },
+        "end": {
+          "line": 30,
+          "column": 5
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.typeof([]);      // => 'array'\nis('typeof', []);   // => 'array'"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.typeof",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.typeof",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.typeof"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only NaN",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 22,
+                  "offset": 21
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 22,
+              "offset": 21
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 22,
+          "offset": 21
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only NaN",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.nan(NaN);        // => true\nis('NaN', NaN);     // => true\nis('NaN', 'NaN');   // => false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.nan"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 31,
+        "column": 4
+      },
+      "end": {
+        "line": 41,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 4
+        },
+        "end": {
+          "line": 42,
+          "column": 54
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.nan(NaN);        // => true\nis('NaN', NaN);     // => true\nis('NaN', 'NaN');   // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.nan",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.nan",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.nan"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only infinity's",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 29,
+                  "offset": 28
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 29,
+              "offset": 28
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 29,
+          "offset": 28
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only infinity's",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.infinity(-Infinity);                     // => true\nis('Infinity', Infinity);                   // => true\nis('Infinity', 9999999*9999999*9999999);    // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.infinity"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 43,
+        "column": 4
+      },
+      "end": {
+        "line": 53,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 54,
+          "column": 4
+        },
+        "end": {
+          "line": 54,
+          "column": 81
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.infinity(-Infinity);                     // => true\nis('Infinity', Infinity);                   // => true\nis('Infinity', 9999999*9999999*9999999);    // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.infinity",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.infinity",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.infinity"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only null",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 23,
+                  "offset": 22
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 23,
+              "offset": 22
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 23,
+          "offset": 22
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only null",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.null(null);      // => true\nis('null', null);   // => true\n// otherwise false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.null"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 55,
+        "column": 4
+      },
+      "end": {
+        "line": 65,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 66,
+          "column": 4
+        },
+        "end": {
+          "line": 66,
+          "column": 55
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.null(null);      // => true\nis('null', null);   // => true\n// otherwise false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.null",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.null",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.null"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only numbers (like a native typeof)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 49,
+                  "offset": 48
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 49,
+              "offset": 48
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 49,
+          "offset": 48
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only numbers (like a native typeof)",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is.finity} more specific determine",
+        "lineNumber": 2
+      },
+      {
+        "title": "see",
+        "description": "{@link is._number} more specific determine",
+        "lineNumber": 3
+      },
+      {
+        "title": "see",
+        "description": "{@link is.countable} less specific determine",
+        "lineNumber": 4
+      },
+      {
+        "title": "example",
+        "description": "is.number(1);         // => true\nis.number(NaN);       // => true\nis('number', null);   // => false",
+        "lineNumber": 5
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 11,
+        "name": "is.number"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 12
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 67,
+        "column": 4
+      },
+      "end": {
+        "line": 80,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 81,
+          "column": 4
+        },
+        "end": {
+          "line": 81,
+          "column": 67
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.number(1);         // => true\nis.number(NaN);       // => true\nis('number', null);   // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.finity",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.finity"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is._number",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is._number"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43,
+                      "offset": 42
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 43,
+                  "offset": 42
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 43,
+              "offset": 42
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.countable",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.countable"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 21,
+                      "offset": 20
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 21,
+                      "offset": 20
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 45,
+                      "offset": 44
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 45,
+                  "offset": 44
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 45,
+              "offset": 44
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.number",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.number",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.number"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only strings",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 26,
+                  "offset": 25
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 26,
+              "offset": 25
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 26,
+          "offset": 25
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only strings",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.string('');          // => true\nis('string', 'null');   // => true\nis('string', []);       // => false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.string"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 82,
+        "column": 4
+      },
+      "end": {
+        "line": 92,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 93,
+          "column": 4
+        },
+        "end": {
+          "line": 93,
+          "column": 67
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.string('');          // => true\nis('string', 'null');   // => true\nis('string', []);       // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.string",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.string",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.string"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only booleans",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 27,
+                  "offset": 26
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 27,
+              "offset": 26
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 27,
+          "offset": 26
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only booleans",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.boolean(true);          // => true\nis('boolean', false);      // => true\n// otherwise false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.boolean"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 94,
+        "column": 4
+      },
+      "end": {
+        "line": 104,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 105,
+          "column": 4
+        },
+        "end": {
+          "line": 105,
+          "column": 69
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.boolean(true);          // => true\nis('boolean', false);      // => true\n// otherwise false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.boolean",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.boolean",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.boolean"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only functions",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 28,
+                  "offset": 27
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 28,
+              "offset": 27
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 28,
+          "offset": 27
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only functions",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.function(Function);      // => true\nis('function', Function);   // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.function"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 106,
+        "column": 4
+      },
+      "end": {
+        "line": 115,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 116,
+          "column": 4
+        },
+        "end": {
+          "line": 116,
+          "column": 71
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.function(Function);      // => true\nis('function', Function);   // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.function",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.function",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.function"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only array",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 24,
+                  "offset": 23
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 24,
+              "offset": 23
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 24,
+          "offset": 23
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only array",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.array([]);           // => true\nis('array', [1,2]);     // => true\nis('array', '1,2');     // => false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.array"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 117,
+        "column": 4
+      },
+      "end": {
+        "line": 127,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 128,
+          "column": 4
+        },
+        "end": {
+          "line": 128,
+          "column": 76
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.array([]);           // => true\nis('array', [1,2]);     // => true\nis('array', '1,2');     // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.array",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.array",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.array"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only objects. Except null and array",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 49,
+                  "offset": 48
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 49,
+              "offset": 48
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 49,
+          "offset": 48
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only objects. Except null and array",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.object({});          // => true\nis('object', {x:1});    // => true\nis('object', []);       // => false\nis('object', null);     // => false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 9,
+        "name": "is.object"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 10
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 129,
+        "column": 4
+      },
+      "end": {
+        "line": 140,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 4
+        },
+        "end": {
+          "line": 141,
+          "column": 98
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.object({});          // => true\nis('object', {x:1});    // => true\nis('object', []);       // => false\nis('object', null);     // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.object",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.object",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.object"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only undefined",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 28,
+                  "offset": 27
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 28,
+              "offset": 27
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 28,
+          "offset": 27
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only undefined",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is._object} more specific determine",
+        "lineNumber": 2
+      },
+      {
+        "title": "example",
+        "description": "is.undefined(undefined);    // => true\nis('undefined', void(0));   // => true",
+        "lineNumber": 3
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.undefined"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 142,
+        "column": 4
+      },
+      "end": {
+        "line": 152,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 153,
+          "column": 4
+        },
+        "end": {
+          "line": 153,
+          "column": 73
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.undefined(undefined);    // => true\nis('undefined', void(0));   // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is._object",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is._object"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43,
+                      "offset": 42
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 43,
+                  "offset": 42
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 43,
+              "offset": 42
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.undefined",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.undefined",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.undefined"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "always success except undefined",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 32,
+                  "offset": 31
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 32,
+              "offset": 31
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 32,
+          "offset": 31
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "always success except undefined",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.defined(null);       // => true\nis('defined', 0);       // => true\nis('defined', void(0)); // => false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.defined"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 158,
+        "column": 4
+      },
+      "end": {
+        "line": 168,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 169,
+          "column": 4
+        },
+        "end": {
+          "line": 169,
+          "column": 71
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.defined(null);       // => true\nis('defined', 0);       // => true\nis('defined', void(0)); // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.defined",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.defined",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.defined"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only objects of customers (developers)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 52,
+                  "offset": 51
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 52,
+              "offset": 51
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 52,
+          "offset": 51
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only objects of customers (developers)",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is.object} less specific determine",
+        "lineNumber": 2
+      },
+      {
+        "title": "example",
+        "description": "is._object({});                     // => true\nis('_object', {x:1});               // => true\nis('_object', new (class q {}));    // => true\nis('_object', null);                // => false\nis('_object', new Date);            // => false\nis('_object', new Error);           // => false",
+        "lineNumber": 3
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 12,
+        "name": "is._object"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 13
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 181,
+        "column": 4
+      },
+      "end": {
+        "line": 195,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 196,
+          "column": 4
+        },
+        "end": {
+          "line": 196,
+          "column": 79
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is._object({});                     // => true\nis('_object', {x:1});               // => true\nis('_object', new (class q {}));    // => true\nis('_object', null);                // => false\nis('_object', new Date);            // => false\nis('_object', new Error);           // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.object",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.object"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is._object",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is._object",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is._object"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "strictly determine of numbers. Not NaN or Infinity or NUMBER more than possible to consider",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 92,
+                  "offset": 91
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 92,
+              "offset": 91
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 92,
+          "offset": 91
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "strictly determine of numbers. Not NaN or Infinity or NUMBER more than possible to consider",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is.finity} alias",
+        "lineNumber": 2
+      },
+      {
+        "title": "see",
+        "description": "{@link is.number} less specific determine",
+        "lineNumber": 3
+      },
+      {
+        "title": "see",
+        "description": "{@link is.countable} less specific determine",
+        "lineNumber": 4
+      },
+      {
+        "title": "example",
+        "description": "is._number(1);         // => true\nis._number(NaN);       // => false\nis('_number', null);   // => false\nis('_number', 9999999*9999999*9999999);   // => false",
+        "lineNumber": 5
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 12,
+        "name": "is._number"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 13
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 197,
+        "column": 4
+      },
+      "end": {
+        "line": 211,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 212,
+          "column": 4
+        },
+        "end": {
+          "line": 212,
+          "column": 99
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is._number(1);         // => true\nis._number(NaN);       // => false\nis('_number', null);   // => false\nis('_number', 9999999*9999999*9999999);   // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.finity",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.finity"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " alias",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 24,
+                      "offset": 23
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 24,
+                  "offset": 23
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 24,
+              "offset": 23
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.number",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.number"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.countable",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.countable"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 21,
+                      "offset": 20
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 21,
+                      "offset": 20
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 45,
+                      "offset": 44
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 45,
+                  "offset": 44
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 45,
+              "offset": 44
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is._number",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is._number",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is._number"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine classes.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 22,
+                  "offset": 21
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 22,
+              "offset": 21
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 22,
+          "offset": 21
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine classes.",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "class q {}\nclass q1 extends q {}\nfunction Class (){}\nis.class( Class );      // => false\nis.class( q );          // => true\nis('Class', q1 );       // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 11,
+        "name": "is.class"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 12
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 213,
+        "column": 4
+      },
+      "end": {
+        "line": 226,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 227,
+          "column": 4
+        },
+        "end": {
+          "line": 227,
+          "column": 96
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "class q {}\nclass q1 extends q {}\nfunction Class (){}\nis.class( Class );      // => false\nis.class( q );          // => true\nis('Class', q1 );       // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.class",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.class",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.class"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "strict comparison to equivalent between arguments",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 50,
+                  "offset": 49
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 50,
+              "offset": 49
+            },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "*",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 1,
+                  "offset": 51
+                },
+                "end": {
+                  "line": 3,
+                  "column": 3,
+                  "offset": 53
+                },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " circular structure cannot be equaled. It returns false",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 3,
+                  "offset": 53
+                },
+                "end": {
+                  "line": 3,
+                  "column": 58,
+                  "offset": 108
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 3,
+              "column": 1,
+              "offset": 51
+            },
+            "end": {
+              "line": 3,
+              "column": 58,
+              "offset": 108
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 58,
+          "offset": 108
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "strict comparison to equivalent between arguments\n\n\\* circular structure cannot be equaled. It returns false",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is.equal} less specific determine",
+        "lineNumber": 6
+      },
+      {
+        "title": "example",
+        "description": "is('_equal', [1,{x:2}],[1,{x:1}]);  // => false\nis('_equal', [1,{x: Function}],[1,{x:function(){}}]);// => false\nis('_equal', [1,{x:'1'}],[1,{x:1}]);// => false\nis('_equal', [1,{x:1}],[1,{x:1}]);  // => true\nis._equal();                        // => true becose (undefined, undefined)\nis._equal(NaN, NaN);                // => true",
+        "lineNumber": 7
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 14,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "first"
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "second"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 17,
+        "name": "is._equal"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 18
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 228,
+        "column": 4
+      },
+      "end": {
+        "line": 247,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 248,
+          "column": 4
+        },
+        "end": {
+          "line": 268,
+          "column": 5
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is('_equal', [1,{x:2}],[1,{x:1}]);  // => false\nis('_equal', [1,{x: Function}],[1,{x:function(){}}]);// => false\nis('_equal', [1,{x:'1'}],[1,{x:1}]);// => false\nis('_equal', [1,{x:1}],[1,{x:1}]);  // => true\nis._equal();                        // => true becose (undefined, undefined)\nis._equal(NaN, NaN);                // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "first",
+        "lineNumber": 14,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      },
+      {
+        "title": "param",
+        "name": "second",
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.equal",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.equal"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 17,
+                      "offset": 16
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 17,
+                      "offset": 16
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 41,
+                      "offset": 40
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 41,
+                  "offset": 40
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 41,
+              "offset": 40
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is._equal",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is._equal",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is._equal"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "comparison to equivalent between arguments\nignores difference in functions\nignores data types difference if it equivalent (1,'1')",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 3,
+                  "column": 55,
+                  "offset": 129
+                },
+                "indent": [
+                  1,
+                  1
+                ]
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 55,
+              "offset": 129
+            },
+            "indent": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "*",
+              "position": {
+                "start": {
+                  "line": 5,
+                  "column": 1,
+                  "offset": 131
+                },
+                "end": {
+                  "line": 5,
+                  "column": 3,
+                  "offset": 133
+                },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " circular structure cannot be equaled. It returns false",
+              "position": {
+                "start": {
+                  "line": 5,
+                  "column": 3,
+                  "offset": 133
+                },
+                "end": {
+                  "line": 5,
+                  "column": 58,
+                  "offset": 188
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 5,
+              "column": 1,
+              "offset": 131
+            },
+            "end": {
+              "line": 5,
+              "column": 58,
+              "offset": 188
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 58,
+          "offset": 188
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "comparison to equivalent between arguments\nignores difference in functions\nignores data types difference if it equivalent (1,'1')\n\n\\* circular structure cannot be equaled. It returns false",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is._equal} more specific determine",
+        "lineNumber": 7
+      },
+      {
+        "title": "example",
+        "description": "is('equal', [1,{x:2}],[1,{x:1}]);  // => false\nis('equal', [1,{x:'1'}],[1,{x:1}]);// => true\nis('equal', [1,{x:1}],[1,{x:1}]);  // => true\nis.equal();                        // => true becose (undefined, undefined)\nis.equal(NaN, NaN);                // => true\nis('equal', [1,{x: Function}],[1,{x:function(){}}]);// => true",
+        "lineNumber": 8
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "first"
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "second"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 17,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 18,
+        "name": "is.equal"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 19
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 302,
+        "column": 4
+      },
+      "end": {
+        "line": 322,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 323,
+          "column": 4
+        },
+        "end": {
+          "line": 347,
+          "column": 5
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is('equal', [1,{x:2}],[1,{x:1}]);  // => false\nis('equal', [1,{x:'1'}],[1,{x:1}]);// => true\nis('equal', [1,{x:1}],[1,{x:1}]);  // => true\nis.equal();                        // => true becose (undefined, undefined)\nis.equal(NaN, NaN);                // => true\nis('equal', [1,{x: Function}],[1,{x:function(){}}]);// => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "first",
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      },
+      {
+        "title": "param",
+        "name": "second",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is._equal",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is._equal"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.equal",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.equal",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.equal"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "check the data that may contain child elements. Otherwise returns false.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 73,
+                  "offset": 72
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 73,
+              "offset": 72
+            },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "*",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 1,
+                  "offset": 74
+                },
+                "end": {
+                  "line": 3,
+                  "column": 3,
+                  "offset": 76
+                },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " can work not safe and throws an error when data is incorrect.",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 3,
+                  "offset": 76
+                },
+                "end": {
+                  "line": 3,
+                  "column": 65,
+                  "offset": 138
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 3,
+              "column": 1,
+              "offset": 74
+            },
+            "end": {
+              "line": 3,
+              "column": 65,
+              "offset": 138
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 65,
+          "offset": 138
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "check the data that may contain child elements. Otherwise returns false.\n\n\\* can work not safe and throws an error when data is incorrect.",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug} without fix",
+        "lineNumber": 5
+      },
+      {
+        "title": "example",
+        "description": "is.empty([]);        // true\nis('empty', '');     // true\nis('empty', {});     // true\nis.empty([1]);       // false\nis('empty', '[]');   // false",
+        "lineNumber": 6
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "param",
+        "description": "without \"notSafe\" can check any data type",
+        "lineNumber": 13,
+        "type": {
+          "type": "OptionalType",
+          "expression": {
+            "type": "NameExpression",
+            "name": "Boolean"
+          }
+        },
+        "name": "notSafe",
+        "default": "false"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 14,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 15,
+        "name": "is.empty"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 16
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 348,
+        "column": 4
+      },
+      "end": {
+        "line": 365,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 366,
+          "column": 4
+        },
+        "end": {
+          "line": 376,
+          "column": 5
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.empty([]);        // true\nis('empty', '');     // true\nis('empty', {});     // true\nis.empty([1]);       // false\nis('empty', '[]');   // false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      },
+      {
+        "title": "param",
+        "name": "notSafe",
+        "lineNumber": 13,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "without \"notSafe\" can check any data type",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "default": "false"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 92,
+                      "offset": 91
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " without fix",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 92,
+                      "offset": 91
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 104,
+                      "offset": 103
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 104,
+                  "offset": 103
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 104,
+              "offset": 103
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.empty",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.empty",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.empty"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine only numbers of possible to consider",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 50,
+                  "offset": 49
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 50,
+              "offset": 49
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 50,
+          "offset": 49
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine only numbers of possible to consider",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is._number} alias",
+        "lineNumber": 2
+      },
+      {
+        "title": "see",
+        "description": "{@link is.number} less specific determine",
+        "lineNumber": 3
+      },
+      {
+        "title": "see",
+        "description": "{@link is.countable} less specific determine",
+        "lineNumber": 4
+      },
+      {
+        "title": "example",
+        "description": "is.finite(1);         // => true\nis.finite(NaN);       // => false\nis('finite', null);   // => false\nis('finite', 9999999*9999999*9999999);   // => false",
+        "lineNumber": 5
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 12,
+        "name": "is.finite"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 13
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 377,
+        "column": 4
+      },
+      "end": {
+        "line": 391,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 392,
+          "column": 4
+        },
+        "end": {
+          "line": 392,
+          "column": 60
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.finite(1);         // => true\nis.finite(NaN);       // => false\nis('finite', null);   // => false\nis('finite', 9999999*9999999*9999999);   // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is._number",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is._number"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " alias",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 25,
+                      "offset": 24
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 25,
+                  "offset": 24
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 25,
+              "offset": 24
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.number",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.number"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.countable",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.countable"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 21,
+                      "offset": 20
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " less specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 21,
+                      "offset": 20
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 45,
+                      "offset": 44
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 45,
+                  "offset": 44
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 45,
+              "offset": 44
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.finite",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.finite",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.finite"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine value can be involved in mathematical operations",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 62,
+                  "offset": 61
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 62,
+              "offset": 61
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 62,
+          "offset": 61
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine value can be involved in mathematical operations",
+        "lineNumber": 1
+      },
+      {
+        "title": "see",
+        "description": "{@link is._number} more specific determine",
+        "lineNumber": 2
+      },
+      {
+        "title": "see",
+        "description": "{@link is.number} more specific determine",
+        "lineNumber": 3
+      },
+      {
+        "title": "see",
+        "description": "{@link is.finite} more specific determine",
+        "lineNumber": 4
+      },
+      {
+        "title": "example",
+        "description": "is.countable(1);         // => true\nis.countable('1');       // => true\nis.countable(true);      // => true\nis.countable(NaN);       // => false\nis('countable', null);   // => false\nis('countable', 9999999*9999999*9999999);   // => false",
+        "lineNumber": 5
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 13,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 14,
+        "name": "is.countable"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 15
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 393,
+        "column": 4
+      },
+      "end": {
+        "line": 409,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 410,
+          "column": 4
+        },
+        "end": {
+          "line": 412,
+          "column": 5
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.countable(1);         // => true\nis.countable('1');       // => true\nis.countable(true);      // => true\nis.countable(NaN);       // => false\nis('countable', null);   // => false\nis('countable', 9999999*9999999*9999999);   // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is._number",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is._number"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43,
+                      "offset": 42
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 43,
+                  "offset": 42
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 43,
+              "offset": 42
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.number",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.number"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      },
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "link",
+                  "url": "is.finite",
+                  "title": null,
+                  "jsdoc": true,
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "is.finite"
+                    }
+                  ],
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " more specific determine",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 18,
+                      "offset": 17
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 42,
+                      "offset": 41
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 42,
+                  "offset": 41
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 42,
+              "offset": 41
+            }
+          }
+        },
+        "title": "sees"
+      }
+    ],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.countable",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.countable",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.countable"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine object of native Date ( some things like (new Date()) instanceof Date )",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 85,
+                  "offset": 84
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 85,
+              "offset": 84
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 85,
+          "offset": 84
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine object of native Date ( some things like (new Date()) instanceof Date )",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.date(new Date);      // => true\nis('date', new Date);   // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.date"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 416,
+        "column": 4
+      },
+      "end": {
+        "line": 425,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 426,
+          "column": 4
+        },
+        "end": {
+          "line": 426,
+          "column": 74
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.date(new Date);      // => true\nis('date', new Date);   // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.date",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.date",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.date"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine object of error",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 29,
+                  "offset": 28
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 29,
+              "offset": 28
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 29,
+          "offset": 28
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine object of error",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.error(new Error);        // => true\nis('error', new TypeError); // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.error"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 427,
+        "column": 4
+      },
+      "end": {
+        "line": 436,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 437,
+          "column": 4
+        },
+        "end": {
+          "line": 437,
+          "column": 76
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.error(new Error);        // => true\nis('error', new TypeError); // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.error",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.error",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.error"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine RegExp.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 21,
+                  "offset": 20
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 21,
+              "offset": 20
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 21,
+          "offset": 20
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine RegExp.",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.regexp(new RegExp);  // => true\nis('RegExp', /1/g);     // => true\nis('regexp', '/1/g');   // => false because it isn't RegExp",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 8,
+        "name": "is.regexp"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 438,
+        "column": 4
+      },
+      "end": {
+        "line": 448,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 449,
+          "column": 4
+        },
+        "end": {
+          "line": 449,
+          "column": 78
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.regexp(new RegExp);  // => true\nis('RegExp', /1/g);     // => true\nis('regexp', '/1/g');   // => false because it isn't RegExp"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.regexp",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.regexp",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.regexp"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine object arguments.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 31,
+                  "offset": 30
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 31,
+              "offset": 30
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 31,
+          "offset": 30
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine object arguments.",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "var args; // get object arguments\n(function(){ args = arguments; })();\nis.argument(args);          // => true\nis('argument', args);       // => true\nis('argument', []);         // => false",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 10,
+        "name": "is.argument"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 11
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 450,
+        "column": 4
+      },
+      "end": {
+        "line": 462,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 463,
+          "column": 4
+        },
+        "end": {
+          "line": 463,
+          "column": 83
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "var args; // get object arguments\n(function(){ args = arguments; })();\nis.argument(args);          // => true\nis('argument', args);       // => true\nis('argument', []);         // => false"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.argument",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.argument",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.argument"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine instance Symbol. (safety for es5)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 47,
+                  "offset": 46
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 47,
+              "offset": 46
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 47,
+          "offset": 46
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine instance Symbol. (safety for es5)",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.symbol(Symbol());     // => true\nis('symbol', Symbol());  // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.symbol"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 464,
+        "column": 4
+      },
+      "end": {
+        "line": 473,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 474,
+          "column": 4
+        },
+        "end": {
+          "line": 474,
+          "column": 78
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.symbol(Symbol());     // => true\nis('symbol', Symbol());  // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.symbol",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.symbol",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.symbol"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine instance Promise.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 31,
+                  "offset": 30
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 31,
+              "offset": 30
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 31,
+          "offset": 30
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine instance Promise.",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is.promise(new Promise(function(){}));  // => true\nis('promise', q.defer().promise);       // => true\nis('promise', {then: function(){}});    // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "name",
+        "description": null,
+        "lineNumber": 6,
+        "name": "is.promise"
+      },
+      {
+        "title": "param",
+        "description": null,
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        },
+        "name": "data"
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 9,
+        "name": null
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 10
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 475,
+        "column": 4
+      },
+      "end": {
+        "line": 486,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 487,
+          "column": 4
+        },
+        "end": {
+          "line": 487,
+          "column": 119
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is.promise(new Promise(function(){}));  // => true\nis('promise', q.defer().promise);       // => true\nis('promise', {then: function(){}});    // => true"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "data",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "any"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "is.promise",
+    "kind": "function",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.promise",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.promise"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine platform support for Symbol (save)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 48,
+                  "offset": 47
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 48,
+              "offset": 47
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 48,
+          "offset": 47
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine platform support for Symbol (save)",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is('support', 'symbol');\nis.support('symbol');\nis.support.symbol();",
+        "lineNumber": 2
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.support.symbol"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 522,
+        "column": 4
+      },
+      "end": {
+        "line": 531,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 532,
+          "column": 4
+        },
+        "end": {
+          "line": 532,
+          "column": 88
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is('support', 'symbol');\nis.support('symbol');\nis.support.symbol();"
+      }
+    ],
+    "implements": [],
+    "params": [],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.support.symbol",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.support.symbol",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.support.symbol"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine platform support for Promise (save)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 49,
+                  "offset": 48
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 49,
+              "offset": 48
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 49,
+          "offset": 48
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine platform support for Promise (save)",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is('support', 'promise');\nis.support('promise');\nis.support.promise();",
+        "lineNumber": 2
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.support.promise"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 533,
+        "column": 4
+      },
+      "end": {
+        "line": 542,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 543,
+          "column": 4
+        },
+        "end": {
+          "line": 543,
+          "column": 108
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is('support', 'promise');\nis.support('promise');\nis.support.promise();"
+      }
+    ],
+    "implements": [],
+    "params": [],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.support.promise",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.support.promise",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.support.promise"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine platform Node.js (save)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 37,
+                  "offset": 36
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 37,
+              "offset": 36
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 37,
+          "offset": 36
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine platform Node.js (save)",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is('platform', 'node'); // => true\nis.platform('node');    // => true\nis.platform.node();     // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.platform.node"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 555,
+        "column": 4
+      },
+      "end": {
+        "line": 564,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 565,
+          "column": 4
+        },
+        "end": {
+          "line": 565,
+          "column": 107
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is('platform', 'node'); // => true\nis.platform('node');    // => true\nis.platform.node();     // => true"
+      }
+    ],
+    "implements": [],
+    "params": [],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.platform.node",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.platform.node",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.platform.node"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It determine platform browser (save)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 37,
+                  "offset": 36
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 37,
+              "offset": 36
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 37,
+          "offset": 36
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "It determine platform browser (save)",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "is('platform', 'browser'); // => true\nis.platform('browser');    // => true\nis.platform.browser();     // => true",
+        "lineNumber": 2
+      },
+      {
+        "title": "returns",
+        "description": null,
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "function",
+        "description": null,
+        "lineNumber": 7,
+        "name": "is.platform.browser"
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 566,
+        "column": 4
+      },
+      "end": {
+        "line": 575,
+        "column": 7
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 576,
+          "column": 4
+        },
+        "end": {
+          "line": 576,
+          "column": 107
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "is('platform', 'browser'); // => true\nis.platform('browser');    // => true\nis.platform.browser();     // => true"
+      }
+    ],
+    "implements": [],
+    "params": [],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "kind": "function",
+    "name": "is.platform.browser",
+    "access": "public",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "is.platform.browser",
+        "kind": "function"
+      }
+    ],
+    "namespace": "is.platform.browser"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "defination on platforms (both variants on platform like Electron)",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 66,
+                  "offset": 65
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 66,
+              "offset": 65
+            },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "bower install --save s-is",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 1,
+                  "offset": 67
+                },
+                "end": {
+                  "line": 3,
+                  "column": 26,
+                  "offset": 92
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 3,
+              "column": 1,
+              "offset": 67
+            },
+            "end": {
+              "line": 3,
+              "column": 26,
+              "offset": 92
+            },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "npm install --save s-is",
+              "position": {
+                "start": {
+                  "line": 5,
+                  "column": 1,
+                  "offset": 94
+                },
+                "end": {
+                  "line": 5,
+                  "column": 24,
+                  "offset": 117
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 5,
+              "column": 1,
+              "offset": 94
+            },
+            "end": {
+              "line": 5,
+              "column": 24,
+              "offset": 117
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 24,
+          "offset": 117
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "description",
+        "description": "defination on platforms (both variants on platform like Electron)\n\nbower install --save s-is\n\nnpm install --save s-is",
+        "lineNumber": 1
+      },
+      {
+        "title": "example",
+        "description": "window.is                   // in browser",
+        "lineNumber": 8
+      },
+      {
+        "title": "example",
+        "description": "var is = require('s-is')    // in Node.js",
+        "lineNumber": 9
+      },
+      {
+        "title": "exports",
+        "description": "s-is",
+        "lineNumber": 10
+      },
+      {
+        "title": "public",
+        "description": null,
+        "lineNumber": 11
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 658,
+        "column": 0
+      },
+      "end": {
+        "line": 670,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 671,
+          "column": 0
+        },
+        "end": {
+          "line": 671,
+          "column": 46
+        }
+      },
+      "file": "/Users/sajera/@sajera/s-is/index.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "window.is                   // in browser"
+      },
+      {
+        "description": "var is = require('s-is')    // in Node.js"
+      }
+    ],
+    "implements": [],
+    "params": [],
+    "properties": [],
+    "returns": [],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "access": "public",
+    "name": "exports",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "exports"
+      }
+    ],
+    "namespace": "exports"
+  }
+]

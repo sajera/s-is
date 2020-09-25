@@ -5,12 +5,12 @@
 executor of checks to delegate a data for checking
 have a ability use upper case when string annotation name checks used
 
-**Parameters**
+### Parameters
 
--   `check` **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** it can be name of branch/check
+-   `check` **[String][1]** it can be name of branch/check
 -   `null-null` **any** it can be name of branch/check
 
-**Examples**
+### Examples
 
 ```javascript
 // the same
@@ -19,35 +19,35 @@ is.platform('browser');
 is.platform.browser();
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.typeof
 
 typeof return name of the data type
 it can return all 10 data types plus new data types of ES6.
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.typeof([]);      // => 'array'
 is('typeof', []);   // => 'array'
 ```
 
-Returns **[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[String][1]** 
 
 ## is.nan
 
 It determine only NaN
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.nan(NaN);        // => true
@@ -55,17 +55,17 @@ is('NaN', NaN);     // => true
 is('NaN', 'NaN');   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.infinity
 
 It determine only infinity's
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.infinity(-Infinity);                     // => true
@@ -73,17 +73,17 @@ is('Infinity', Infinity);                   // => true
 is('Infinity', 9999999*9999999*9999999);    // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.null
 
 It determine only null
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.null(null);      // => true
@@ -91,21 +91,24 @@ is('null', null);   // => true
 // otherwise false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.number
 
--   **See: [is.finity](is.finity) more specific determine**
--   **See: [is.\_number](#is_number) more specific determine**
--   **See: [is.countable](#iscountable) less specific determine**
+-   **See: [is.finity][3] more specific determine
+    **
+-   **See: [is.\_number][4] more specific determine
+    **
+-   **See: [is.countable][5] less specific determine
+    **
 
 It determine only numbers (like a native typeof)
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.number(1);         // => true
@@ -113,17 +116,17 @@ is.number(NaN);       // => true
 is('number', null);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.string
 
 It determine only strings
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.string('');          // => true
@@ -131,17 +134,17 @@ is('string', 'null');   // => true
 is('string', []);       // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.boolean
 
 It determine only booleans
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.boolean(true);          // => true
@@ -149,34 +152,34 @@ is('boolean', false);      // => true
 // otherwise false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.function
 
 It determine only functions
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.function(Function);      // => true
 is('function', Function);   // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.array
 
 It determine only array
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.array([]);           // => true
@@ -184,17 +187,17 @@ is('array', [1,2]);     // => true
 is('array', '1,2');     // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.object
 
 It determine only objects. Except null and array
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.object({});          // => true
@@ -203,36 +206,37 @@ is('object', []);       // => false
 is('object', null);     // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.undefined
 
--   **See: [is.\_object](#is_object) more specific determine**
+-   **See: [is.\_object][6] more specific determine
+    **
 
 It determine only undefined
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.undefined(undefined);    // => true
 is('undefined', void(0));   // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.defined
 
 always success except undefined
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.defined(null);       // => true
@@ -240,19 +244,20 @@ is('defined', 0);       // => true
 is('defined', void(0)); // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.\_object
 
--   **See: [is.object](#isobject) less specific determine**
+-   **See: [is.object][7] less specific determine
+    **
 
 It determine only objects of customers (developers)
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is._object({});                     // => true
@@ -263,21 +268,24 @@ is('_object', new Date);            // => false
 is('_object', new Error);           // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.\_number
 
--   **See: [is.finity](is.finity) alias**
--   **See: [is.number](#isnumber) less specific determine**
--   **See: [is.countable](#iscountable) less specific determine**
+-   **See: [is.finity][3] alias
+    **
+-   **See: [is.number][8] less specific determine
+    **
+-   **See: [is.countable][5] less specific determine
+    **
 
 strictly determine of numbers. Not NaN or Infinity or NUMBER more than possible to consider
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is._number(1);         // => true
@@ -286,17 +294,17 @@ is('_number', null);   // => false
 is('_number', 9999999*9999999*9999999);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.class
 
 It determine classes.
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 class q {}
@@ -307,22 +315,23 @@ is.class( q );          // => true
 is('Class', q1 );       // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.\_equal
 
--   **See: [is.equal](#isequal) less specific determine**
+-   **See: [is.equal][9] less specific determine
+    **
 
 strict comparison to equivalent between arguments
 
 \* circular structure cannot be equaled. It returns false
 
-**Parameters**
+### Parameters
 
 -   `first` **any** 
 -   `second` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is('_equal', [1,{x:2}],[1,{x:1}]);  // => false
@@ -333,11 +342,12 @@ is._equal();                        // => true becose (undefined, undefined)
 is._equal(NaN, NaN);                // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.equal
 
--   **See: [is.\_equal](#is_equal) more specific determine**
+-   **See: [is.\_equal][10] more specific determine
+    **
 
 comparison to equivalent between arguments
 ignores difference in functions
@@ -345,12 +355,12 @@ ignores data types difference if it equivalent (1,'1')
 
 \* circular structure cannot be equaled. It returns false
 
-**Parameters**
+### Parameters
 
 -   `first` **any** 
 -   `second` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is('equal', [1,{x:2}],[1,{x:1}]);  // => false
@@ -361,22 +371,23 @@ is.equal(NaN, NaN);                // => true
 is('equal', [1,{x: Function}],[1,{x:function(){}}]);// => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.empty
 
--   **See: <https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug> without fix**
+-   **See: [https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug][11] without fix
+    **
 
 check the data that may contain child elements. Otherwise returns false.
 
 \* can work not safe and throws an error when data is incorrect.
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
--   `notSafe` **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** without "notSafe" can check any data type (optional, default `false`)
+-   `notSafe` **[Boolean][2]** without "notSafe" can check any data type (optional, default `false`)
 
-**Examples**
+### Examples
 
 ```javascript
 is.empty([]);        // true
@@ -386,21 +397,24 @@ is.empty([1]);       // false
 is('empty', '[]');   // false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.finite
 
--   **See: [is.\_number](#is_number) alias**
--   **See: [is.number](#isnumber) less specific determine**
--   **See: [is.countable](#iscountable) less specific determine**
+-   **See: [is.\_number][4] alias
+    **
+-   **See: [is.number][8] less specific determine
+    **
+-   **See: [is.countable][5] less specific determine
+    **
 
 It determine only numbers of possible to consider
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.finite(1);         // => true
@@ -409,21 +423,24 @@ is('finite', null);   // => false
 is('finite', 9999999*9999999*9999999);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.countable
 
--   **See: [is.\_number](#is_number) more specific determine**
--   **See: [is.number](#isnumber) more specific determine**
--   **See: [is.finite](#isfinite) more specific determine**
+-   **See: [is.\_number][4] more specific determine
+    **
+-   **See: [is.number][8] more specific determine
+    **
+-   **See: [is.finite][12] more specific determine
+    **
 
 It determine value can be involved in mathematical operations
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.countable(1);         // => true
@@ -434,51 +451,51 @@ is('countable', null);   // => false
 is('countable', 9999999*9999999*9999999);   // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.date
 
 It determine object of native Date ( some things like (new Date()) instanceof Date )
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.date(new Date);      // => true
 is('date', new Date);   // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.error
 
 It determine object of error
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.error(new Error);        // => true
 is('error', new TypeError); // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.regexp
 
 It determine RegExp.
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.regexp(new RegExp);  // => true
@@ -486,17 +503,17 @@ is('RegExp', /1/g);     // => true
 is('regexp', '/1/g');   // => false because it isn't RegExp
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.argument
 
 It determine object arguments.
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 var args; // get object arguments
@@ -506,34 +523,34 @@ is('argument', args);       // => true
 is('argument', []);         // => false
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.symbol
 
 It determine instance Symbol. (safety for es5)
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.symbol(Symbol());     // => true
 is('symbol', Symbol());  // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.promise
 
 It determine instance Promise.
 
-**Parameters**
+### Parameters
 
 -   `data` **any** 
 
-**Examples**
+### Examples
 
 ```javascript
 is.promise(new Promise(function(){}));  // => true
@@ -541,13 +558,13 @@ is('promise', q.defer().promise);       // => true
 is('promise', {then: function(){}});    // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.support.symbol
 
 It determine platform support for Symbol (save)
 
-**Examples**
+### Examples
 
 ```javascript
 is('support', 'symbol');
@@ -555,13 +572,13 @@ is.support('symbol');
 is.support.symbol();
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.support.promise
 
 It determine platform support for Promise (save)
 
-**Examples**
+### Examples
 
 ```javascript
 is('support', 'promise');
@@ -569,13 +586,13 @@ is.support('promise');
 is.support.promise();
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.platform.node
 
 It determine platform Node.js (save)
 
-**Examples**
+### Examples
 
 ```javascript
 is('platform', 'node'); // => true
@@ -583,13 +600,13 @@ is.platform('node');    // => true
 is.platform.node();     // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## is.platform.browser
 
 It determine platform browser (save)
 
-**Examples**
+### Examples
 
 ```javascript
 is('platform', 'browser'); // => true
@@ -597,7 +614,7 @@ is.platform('browser');    // => true
 is.platform.browser();     // => true
 ```
 
-Returns **[Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[Boolean][2]** 
 
 ## exports
 
@@ -607,7 +624,7 @@ bower install --save s-is
 
 npm install --save s-is
 
-**Examples**
+### Examples
 
 ```javascript
 window.is                   // in browser
@@ -616,3 +633,27 @@ window.is                   // in browser
 ```javascript
 var is = require('s-is')    // in Node.js
 ```
+
+[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[3]: is.finity
+
+[4]: #is_number
+
+[5]: #iscountable
+
+[6]: #is_object
+
+[7]: #isobject
+
+[8]: #isnumber
+
+[9]: #isequal
+
+[10]: #is_equal
+
+[11]: https://docs.omniref.com/js/npm/lodash/0.9.0/symbols/%3Canonymous%3E~hasDontEnumBug
+
+[12]: #isfinite

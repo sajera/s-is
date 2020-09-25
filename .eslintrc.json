@@ -4,7 +4,7 @@
         "node": true
     },
     "rules": {
-        "complexity": [2, 16],
+        "complexity": [2, 17],
         "max-nested-callbacks": [2, 3],
         "max-params": [2, 3],
         "max-statements": [2, 30],

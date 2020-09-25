@@ -1,96 +1,70 @@
 
 var gulp = require('gulp');
-var wrapper = require('gulp-wrap');
 var pkg = require('./package.json');
+var sourcemaps = require('gulp-sourcemaps');
 var date = (new Date).toISOString().substring(0,10);
-var anonymous = '/** @ignore */\n(function () {\'use strict\';\n<%= contents %>\n})()';
 var license = '/*\n * s-is version '+pkg.version+' at '+date+
     '\n * @license MIT License Copyright (c) 2016 Serhii Perekhrest <allsajera@gmail.com> ( Sajera )\
     \n */\n<%= contents %> ';
 
-function src ( name ) {
-    return gulp.src(['lib/*.js'])
-        .pipe(require('gulp-order')([ // queue of files
-            'types.js',
-            'strict.js',
-            'helpers.js',
-            'support.js',
-            'platform.js',
-            'is.js',
-            'define.js'
-        ]))
-        .pipe( require('gulp-concat')(name||'is.js') )
-        .pipe( wrapper(anonymous) );
+gulp.task('lint', lint);
+gulp.task('test', test);
+gulp.task('build', gulp.series([lint, test, build]));
+gulp.task('doc', gulp.series([generateDoc('html'), generateDoc('md'), generateDoc('json')]));
+
+gulp.task('watch', function () {
+  gulp.watch('lib/*.js', [lint, test]);
+  // gulp.watch('lib/*.js', [lint, test, build]);
+});
+
+function test () {
+  return gulp.src('test/test.js', { read: false })
+    .pipe( require('gulp-mocha')({ reporter: 'nyan' }) );
 }
 
-gulp.task('concat', function () {
-    return src('s-is.js')
-        .pipe( wrapper(license) )
-        .pipe( gulp.dest('./') );
-});
+function lint () {
+  return gulp.src('lib/*.js')
+    .pipe( require('gulp-eslint')() )
+    .pipe( require('gulp-eslint').format() )
+    .pipe( require('gulp-eslint').failAfterError() );
+}
 
-gulp.task('minify', function () {
-    return src('s-is.min.js')
-        .pipe( require('gulp-uglify')() )
-        .pipe( wrapper(license) )
-        .pipe( gulp.dest('./') );
-});
+function build () {
+  return gulp.src('lib/*.js')
+    .pipe( require('gulp-eslint')() )
+    .pipe( require('gulp-eslint').format() )
+    .pipe( require('gulp-eslint').failAfterError() )
+    .pipe(require('gulp-order')([ // queue of files
+      'types.js',
+      'strict.js',
+      'helpers.js',
+      'support.js',
+      'platform.js',
+      'is.js',
+      'define.js'
+    ]))
+    .pipe( require('gulp-concat')('index.js') )
+    .pipe( require('gulp-wrap')('/** @ignore */\n(function () {\'use strict\';\n<%= contents %>\n})()') )
+    .pipe( require('gulp-wrap')(license) )
+    .pipe( gulp.dest('./') )          // save .js
+    .pipe( sourcemaps.init() )
+    .pipe( require('gulp-uglify')({}) )
+    .pipe( require('gulp-wrap')(license) )
+    .pipe( require('gulp-rename')({ extname: '.min.js' }) )
+    .pipe(sourcemaps.write('./'))
+    .pipe( gulp.dest('./') );         // save .min.js
+}
 
-gulp.task('lint', function () {
-    return gulp.src(['s-is.js','s-is.min.js'])
-        .pipe( require('gulp-eslint')() )
-        .pipe( require('gulp-eslint').format() )
-        .pipe( require('gulp-eslint').failAfterError() );
-});
-
-gulp.task('test', function ( done ) {
-    return gulp.src('test/test.js', {read: false})
-        .pipe( require('gulp-mocha')({reporter: 'nyan'}) );
-});
-
-gulp.task('build', ['concat', 'minify'], function () {
-    gulp.start('lint');
-    gulp.start('test');
-});
-
-gulp.task('watch', ['build'], function () {
-
-    gulp.watch('lib/*.js', ['concat', 'minify']);
-
-});
-
-gulp.task('doc', function () {
+function generateDoc ( type ) {
+  return function documentation () {
     var doc = require('gulp-documentation');
-    return gulp.src('s-is.js')
-        .pipe( doc('html', {}, {
-            name: pkg.name.toUpperCase(),
-            version: pkg.version,
-            license: pkg.license,
-            date: date
-        }) )
-        .pipe( gulp.dest('doc') );
-});
-
-gulp.task('doc-md', function () {
-    var doc = require('gulp-documentation');
-    return gulp.src('s-is.js')
-        .pipe( doc('md', {}, {
-            name: pkg.name.toUpperCase(),
-            version: pkg.version,
-            license: pkg.license,
-            date: date,
-        }) )
-        .pipe( gulp.dest('doc') );
-});
-
-gulp.task('doc-json', function () {
-    var doc = require('gulp-documentation');
-    return gulp.src('s-is.js')
-        .pipe( doc('json', {}, {
-            name: pkg.name.toUpperCase(),
-            version: pkg.version,
-            license: pkg.license,
-            date: date
-        }) )
-        .pipe( gulp.dest('doc') );
-});
+    return gulp.src('./index.js')
+      .pipe( doc(type, {}, {
+        name: pkg.name.toUpperCase(),
+        version: pkg.version,
+        license: pkg.license,
+        date: date
+      }) )
+      .pipe( gulp.dest('doc') );
+  }
+}

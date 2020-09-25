@@ -1,5 +1,5 @@
 /*
- * s-is version 1.4.15 at 2018-01-26
+ * s-is version 1.4.15 at 2020-09-25
  * @license MIT License Copyright (c) 2016 Serhii Perekhrest <allsajera@gmail.com> ( Sajera )    
  */
 /** @ignore */

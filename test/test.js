@@ -1,7 +1,7 @@
 /*
 * Unit tests for is.js
 */
-var is = module.exports = require('../s-is.min.js')
+var is = module.exports = require('../index.min.js')
 // require('chai').should();
 var expect = require('chai').expect;
 var assert = require('chai').assert;
@@ -23,8 +23,8 @@ describe('test for', function() {
     });
 
     require('./test-general.js')
-    require('./test-strict.js'); 
-    require('./test-helpers.js'); 
+    require('./test-strict.js');
+    require('./test-helpers.js');
     require('./test-support.js');
 
 });
